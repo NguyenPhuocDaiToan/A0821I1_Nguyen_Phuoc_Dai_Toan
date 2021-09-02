@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row-content::after {
+    content: "";
+    display:block;
+    clear: both;
+}
+#form-res{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornsilk;
+}
+.header{
+    background-color: aquamarine;
+}
+.name-header{
+    text-align: center;
+    color: blue;
+    padding: 8px 0;
+    font-size: 20px;
+}
+.row-content{
+    width: 100%;
+    margin: 10px;
+}
+.col-left{
+    width: 25%;
+    float: left;
+    color: blue;
+    font-size: 17px;
+}
+.col-right{
+    width: 75%;
+    float: left;
+}
+.input-form{
+    padding: 3px 1px;
+    font-size: 15px;
+}
+.input-address{
+    padding: 5px;
+}
+.register-btn{
+    margin: 10px 0;
+    display: block;
+}
+.button-res{
+    padding: 5px 15px;
+    margin-right: 15px;
+}

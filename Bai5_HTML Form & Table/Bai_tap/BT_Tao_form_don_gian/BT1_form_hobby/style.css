@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+.background-full{
+    background-color: #ccc;
+    height: 500px;
+}
+#form-hobby{
+    width: 600px;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+#form-hobby .header-form{
+    background-color: #F76336FF;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+.content-section{
+    color: blue;
+}
+.row{
+    padding: 15px 0;
+}
+.content-form .content-form-left{
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+.content-form .content-form-right{
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+}
+
+.checkbox-hobby{
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: coral;
+}
+.form-submit{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 4px;
+}

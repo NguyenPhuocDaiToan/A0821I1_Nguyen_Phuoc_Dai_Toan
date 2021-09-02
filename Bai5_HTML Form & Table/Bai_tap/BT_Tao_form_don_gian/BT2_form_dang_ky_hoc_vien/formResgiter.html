@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Register</title>
+</head>
+<body>
+    <form action="">
+        <div id="form-res">
+            <div class="header">
+                <p class="name-header"><b>ĐĂNG KÝ HỌC VIÊN</b></p>
+            </div>
+            <!-- Begin Họ và tên -->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Họ và tên</p>
+                </div>
+                <div class="col-right">
+                    <input class="input-form" type="text" placeholder="Name" name="YourName">
+                </div>
+            </div>
+            <!-- Begin Ngày sinh -->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Ngày sinh</p>
+                </div>
+                <div class="col-right">
+                    <input class="input-form" type="date" name="DateBirth" size="30px">
+                </div>
+            </div>
+            <!--  Begin Giới tính  -->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Giới tính</p>
+                </div>
+                <div class="col-right">
+                    <input type="radio" name="Gender"> Nam
+                    <input type="radio" name="Gender"> Nữ
+                </div>
+            </div>
+            <!--  Begin Address-->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Địa chỉ</p>
+                </div>
+                <div class="col-right">
+                    <textarea name="Address" placeholder="Address" cols="30" rows="3" class="input-address"></textarea>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--   Begin Class    -->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Lớp</p>
+                </div>
+                <div class="col-right">
+                    <select name="Class" class="input-form">
+                        <option value="Chọn Lớp">- Chọn Lớp -</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+            </div>
+            <!--   Begin Email   -->
+            <div class="row-content">
+                <div class="col-left">
+                    <p class="content-section">Email</p>
+                </div>
+                <div class="col-right">
+                    <input class="input-form" type="email" placeholder="Email" name="Email" size="30px">
+                </div>
+            </div>
+            <!--   Begin Telephone   -->
+            <div class="row-content">
+
+                <div class="col-left">
+                    <p class="content-section">Số điện thoại</p>
+                </div>
+
+                <div class="col-right">
+                    <input class="input-form" type="text" placeholder="Phone" name="phone" size="30px">
+                    <div class="register-btn">
+                        <button class="button-res">Đăng ký</button>
+                        <button class="button-res" type="reset">Nhập lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
