@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bgr-yellow{
+    background-color: yellow;
+}
+.schedule{
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #5b89b7;
+}
+.info-table{
+    width: 100%;
+    background-color: cornsilk;
+}
+.info-table caption{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #cc2727;
+    background-color: #91c263;
+}
+.info-table th,
+.info-table td{
+   padding: 5px 10px;
+    color: blue;
+}
+table{
+    border-collapse: collapse;
+}
+.lesson-schedule{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-right:1px solid #000;
+    background-color: cornsilk;
+}
+.lesson-schedule th{
+    text-align: center;
+    padding: 5px;
+    border-left: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+}
+.lesson-schedule td{
+    padding: 5px 25px;
+    border-left: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+}
+.lesson-schedule tr:nth-child(2){
+    background-color: #ee9328;
+}

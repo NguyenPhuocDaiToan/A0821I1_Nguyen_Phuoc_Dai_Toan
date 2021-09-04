@@ -1,54 +1,43 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-.clear{
-    clear: both;
-}
-.background-full{
-    background-color: #ccc;
-    height: 500px;
-}
 #form-hobby{
-    width: 600px;
-    background-color: #fff;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 20px;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: aqua;
 }
-#form-hobby .header-form{
-    background-color: #F76336FF;
-    color: #fff;
+#form-hobby table{
+    width: 100%;
+    background-color: cornsilk;
+    padding-bottom: 10px;
+}
+.header-form {
     font-size: 20px;
-    text-align: center;
-    padding: 10px 0;
-}
-.content-section{
-    color: blue;
-}
-.row{
-    padding: 15px 0;
-}
-.content-form .content-form-left{
-    float: left;
-    width: 20%;
-    text-align: right;
-}
-.content-form .content-form-right{
-    width: 80%;
-    float: left;
-    padding-left: 20px;
+    padding: 8px;
+    background-color: #f65510;
+    color: #fff;
+    font-weight: 500;
 }
 
-.checkbox-hobby{
-    width: 30%;
-    display: inline-block;
-    margin-bottom: 5px;
-    color: coral;
+.row-content{
+    text-align: right;
+    color: blue;
+    width: 25%;
+    padding: 10px;
 }
-.form-submit{
+.info-input{
+    padding: 2px 5px;
+}
+.checkbox-hobby{
+    padding-left: 8px;
     display: inline-block;
-    margin-right: 20px;
-    padding: 4px;
+    width: 30%;
+    color: #f65510;
+}
+.btn{
+    padding: 3px;
+    margin-right: 30px;
 }

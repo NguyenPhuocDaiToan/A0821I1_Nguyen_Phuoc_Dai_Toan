@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+}
+table{
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+caption{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+th{
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    background-color: #d61b06;
+    font-weight: 400;
+    border:1px solid #fff;
+    padding: 20px;
+}
+td{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    color:#5f6062;
+    font-size:13px;
+    padding:20px;
+    border:1px solid #000;
+    text-align: center;
+    padding: 20px;
+}

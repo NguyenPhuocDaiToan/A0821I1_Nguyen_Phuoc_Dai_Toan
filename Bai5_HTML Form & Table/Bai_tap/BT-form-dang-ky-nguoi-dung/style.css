@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mr-bottom{
+    margin-bottom: 10px;
+}
+#form-regester{
+    width: 280px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornsilk;
+    line-height: 1.5;
+}
+.input-form{
+    padding: 3px 35px;
+}
+.section-gender{
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 20px;
+}
+
+.btn-res{
+    padding: 2px;
+}

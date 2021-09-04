@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Css chung */
+.text-red{
+    color: red !important;
+}
+.text-black{
+    color: #000 !important;
+}
+.text-white{
+    color: #fff !important;
+}
+.text-blue{
+    color: blue;
+}
+.bgr-yellow{
+    background-color: #ea951c;
+}
+.bgr-red{
+    background-color: red;
+}
+.bgr-blue{
+    background-color: blue;
+}
+/* End */
+#calendar{
+    width: 560px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    width: 100%;
+}
+table caption{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+th{
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+td{
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.body-calendar td{
+    width: 80px;
+    border: 1px solid #ccc;
+}
+
