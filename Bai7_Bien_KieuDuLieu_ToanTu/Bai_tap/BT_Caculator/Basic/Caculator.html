@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Máy tính</title>
+</head>
+<body>
+    <div id="caculator-basic">
+        <form action="">
+            <div class="input-caculator">
+                <input type="text" class="pad-4px" id="number1">
+                <input type="text" class="pad-4px" id="number2">
+            </div>
+            <div class="btn-caculator">
+                <button type="button" class="pad-4px" onclick="getResult('addition')">Addition(+)</button>
+                <button type="button" class="pad-4px" onclick="getResult('sustraction')">Subtraction(-)</button>
+                <button type="button" class="pad-4px" onclick="getResult('mul')">Multiplication(X)</button>
+                <button type="button" class="pad-4px" onclick="getResult('div')">Division(/)</button>
+            </div>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script>
+        function getResult(obj) {
+            let number1,number2, result;
+            number1 = document.getElementById("number1").value;
+            number2 = document.getElementById("number2").value;
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+            if(obj === 'addition')  result = number1 + number2;
+            if(obj === 'sustraction')  result = number1 - number2;
+            if(obj === 'mul')  result = number1 * number2;
+            if(obj === 'div')  result = number1 / number2;
+            document.getElementById('result').innerText = 'Result Division: ' + result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+    <script>
+        let inputPhysics;
+        let inputChemistry;
+        let inputBiology;
+        inputPhysics = prompt("Nhập điểm lý");
+        inputChemistry = prompt("Nhập điểm hóa");
+        inputBiology = prompt("Nhập điểm sinh");
+
+        let physics = parseInt(inputPhysics);
+        let chemistry = parseInt(inputChemistry);
+        let biology = parseInt(inputBiology);
+
+        let average = (physics + chemistry + biology)/3;
+        document.write(average);
+    </script>
+</body>
+</html>

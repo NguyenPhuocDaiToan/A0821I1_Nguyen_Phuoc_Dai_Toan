@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.width30{
+    width: 30%;
+    display: inline-block;
+}
+.pad-4px{
+    padding: 4px;
+}
+#currency-conver{
+    width: 700px;
+    margin: 20px auto;
+}
+#currency-conver table{
+    width: 100%;
+    text-align: center;
+}
+.btn-convert{
+    background-color: #8b6b98;
+    color: white;
+    border: none;
+    padding: 5px 19px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.btn-convert:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#demo{
+    padding: 10px 0;
+}

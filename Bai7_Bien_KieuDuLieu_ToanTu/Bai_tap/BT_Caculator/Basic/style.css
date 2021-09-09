@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pad-4px{
+    padding: 4px;
+}
+#caculator-basic{
+    width: 400px;
+    margin: 20px auto;
+}
+.input-caculator{
+
+}
+#result,
+.btn-caculator{
+    padding-top: 10px;
+}

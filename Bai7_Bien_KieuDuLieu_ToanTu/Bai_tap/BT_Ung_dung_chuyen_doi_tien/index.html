@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <div id="currency-conver">
+        <form action="">
+            <table>
+                <tr>
+                    <th>Amount</th>
+                    <th>From Currency</th>
+                    <th>To Currency</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="pad-4px" id="amount">
+                    </td>
+                    <td>
+                        <select name="FromCurrency" class="pad-4px" id="FromCurrency">
+                            <option value="VietNam">VietNam</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="ToCurrency" class="pad-4px" id="ToCurrency">
+                            <option value="USD">USD</option>
+                            <option value="VietNam">VietNam</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-convert" onclick="btn()">Convert</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function btn() {
+            let inputAmount, inputFromCurrency, inputToCurrency, result, convert;
+            inputAmount = document.getElementById("amount").value;
+            result = parseInt(inputAmount);
+            inputFromCurrency = document.getElementById("FromCurrency").value;
+            inputToCurrency = document.getElementById("ToCurrency").value;
+
+            if(inputFromCurrency === 'VietNam' && inputToCurrency === 'VietNam')
+                convert = "Result: " + result + ' VND';
+            else if(inputFromCurrency === 'USD' && inputToCurrency === 'USD')
+                convert = "Result: " + result +' USD';
+            else if (inputFromCurrency === 'VietNam' && inputToCurrency === 'USD')
+                convert = "Result: " + result/23000 +' USD';
+            else convert = "Result: " + result*23000 + ' VND';
+
+            document.getElementById("demo").innerText = convert;
+        }
+    </script>
+</body>
+</html>
