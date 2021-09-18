@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+#main .btn{
+    padding: 4px 8px;
+    margin: 10px 30px;
+}

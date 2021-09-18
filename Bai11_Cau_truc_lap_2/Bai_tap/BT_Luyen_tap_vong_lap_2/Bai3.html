@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let height_triangle = parseInt(prompt('Nhập chiều cao của tam giác: '));
+        let result_above_left  = '';
+        let result_below_left  = '';
+        let result_above_right = '';
+        let result_below_right = '';
+
+        for(let i=1;i<=height_triangle;i++){
+            // cạnh vuông nằm dưới, trái
+            for(let j=1;j<=i;j++)   result_below_left += '*';
+            result_below_left += '<br>';
+
+            // cạnh vuông nằm trên, trái
+            for(let j= height_triangle-i+1;j>=1;j--)    result_above_left += '*';
+            result_above_left += '<br>';
+
+            // cạnh vuông nằm dưới, phải
+            for(let j=height_triangle-i;j>=1;j--)   result_below_right += '&nbsp&nbsp';
+            for(let j=1;j<=i;j++)   result_below_right += '*';
+            result_below_right += '<br>';
+
+            // cạnh vuông nằm trên, phải
+            for(let j=i-1;j>=1;j--)   result_above_right += '&nbsp&nbsp';
+            for(let j=height_triangle-i+1;j>=1;j--)   result_above_right += '*';
+            result_above_right += '<br>';
+        }
+        document.write(result_below_left + '<br>' + result_above_left
+        + '<br>'+ result_below_right + '<br>' + result_above_right);
+    </script>
+</body>
+</html>

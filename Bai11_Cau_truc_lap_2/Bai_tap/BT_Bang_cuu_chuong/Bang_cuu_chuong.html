@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cưu chương</title>
+
+</head>
+<body>
+    <script>
+        let sout;
+        sout = "<table border='1' width='100%' cellspacing='0' cellpadding='5'>";
+        for(let i=2;i<=9;i++){
+            sout += '<tr>';
+            for(let j=1;j<=9;j++)
+                sout += '<td>' + i + 'x' + j + '=' +i*j + '</td>';
+            sout += '</tr>'
+        }
+        sout += '</table>'
+        document.write(sout);
+    </script>
+</body>
+</html>

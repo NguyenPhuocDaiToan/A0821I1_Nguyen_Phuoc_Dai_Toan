@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nguyên âm hay phụ âm</title>
+</head>
+<body>
+    <script>
+        let character = prompt('Nhập 1 kí tự để kiểm tra nguyên âm hay phụ âm !!!');
+        if(character.length>1)  alert('Bạn nhập không hợp lệ.');
+        else{
+            let characterUpper = character.toUpperCase();
+            if(characterUpper==='U' || characterUpper==='E' || characterUpper==='O'
+                || characterUpper==='A' || characterUpper==='I'){
+                alert(character + ' là một nguyên âm.');
+            }
+            else if(characterUpper>='A' && characterUpper<='Z') alert(character + ' là một phụ âm.');
+            else alert('Kí tự nhập không phải là chữ cái.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacy</title>
+</head>
+<body>
+    <script>
+       let x, y, z, text;
+       x=1;
+       y=1;
+       text = 'Dãy fibonacy: 1 1 ';
+       for(let i=3;i<=20;i++){
+           z = x + y;
+           text = text + z + ' ';
+           x=y;
+           y=z;
+       }
+       document.write(text + '...');
+    </script>
+</body>
+</html>

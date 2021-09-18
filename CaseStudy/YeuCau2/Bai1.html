@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập</title>
+</head>
+<body>
+    <script>
+        let salary = parseFloat(prompt('Nhập vào tiền lương của bạn: '));
+        let tax_20_percent = 0.2;
+        let tax_10_percent = 0.1;
+        let tax_5_percent = 0.05;
+        if(salary>=15)  tax_salary(salary, tax_20_percent);
+        else if(salary>=7)  tax_salary(salary, tax_10_percent);
+        else tax_salary(salary, tax_5_percent);
+
+        function tax_salary(salary, taxPercent) {
+            alert('Thuế của bạn cần phải trả là: ' + salary*taxPercent
+                + '\nTiền lương thực tế của bạn nhận được là: ' + (salary-salary*taxPercent));
+        }
+    </script>
+</body>
+</html>

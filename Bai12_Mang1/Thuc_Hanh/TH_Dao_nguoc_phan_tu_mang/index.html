@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let x = [1,0,2,9,10,11,20,-99];
+    // cách 1: giải ko dùng hàm
+    let first = 0;
+    let last = x.length - 1;
+    while(first<last){
+        let temp = x[first];
+        x[first] = x[last];
+        x[last] = temp;
+        first++;
+        last--;
+    }
+    document.write(x);
+    /*
+        cách 2: dùng hàm reserve();
+        let new_array = x.reverse();
+        document.write(new_array);
+    */
+</script>
+</body>
+</html>

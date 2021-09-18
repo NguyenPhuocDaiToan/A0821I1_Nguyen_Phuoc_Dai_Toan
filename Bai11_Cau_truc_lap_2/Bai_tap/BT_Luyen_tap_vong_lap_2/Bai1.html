@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacy</title>
+</head>
+<body>
+    <p id="result" style="padding-left: 50px"></p>
+    <script>
+        let x, y, z, result;
+        x=1;
+        y=1;
+        result = 'Dãy fibonacy: <br>1 <br>1 <br> ';
+        for(let i=3;i<=100;i++){
+            z = x + y;
+            result = result + z + '<br>';
+            x=y;
+            y=z;
+        }
+        document.getElementById('result').innerHTML = result  + '...';
+    </script>
+</body>
+</html>

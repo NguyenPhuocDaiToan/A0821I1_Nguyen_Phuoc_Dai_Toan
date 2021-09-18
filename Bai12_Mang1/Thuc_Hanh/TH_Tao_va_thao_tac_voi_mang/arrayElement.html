@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành thao tác với mảng</title>
+</head>
+<body>
+    <input type="text" id="add-element">
+    <button id="btn-add-element" onclick="btn_add_element()">add</button>
+    <button id="btn-display-array" onclick="btn_display_array()">Display</button>
+    <p id="result"></p>
+    <script>
+        let array = Array();
+        let index=0;
+        function btn_add_element() {
+            array[index] = document.getElementById('add-element').value;
+            document.getElementById('add-element').value = '';
+            index++;
+        }
+        function btn_display_array() {
+            let result = '';
+            for(let i=0;i<array.length;i++){
+                result += 'array[' + i + '] = ' + array[i] + '<br>';
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

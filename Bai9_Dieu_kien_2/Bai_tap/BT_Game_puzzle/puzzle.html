@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="Images/Cars/Hinh1A.png" onclick="changeImg('A')" id="carA" width="250 px" height="600 px">
+    <img src="Images/Cars/Hinh2B.png" onclick="changeImg('B')" id="carB" width="250 px" height="600 px">
+    <img src="Images/Cars/Hinh3C.png" onclick="changeImg('C')" id="carC" width="250 px" height="600 px">
+    <img src="Images/Cars/Hinh1D.png" onclick="changeImg('D')" id="carD" width="250 px" height="600 px">
+    <img src="Images/Cars/Hinh1E.png" onclick="changeImg('E')" id="carE" width="250 px" height="600 px">
+    <script>
+        function changeImg(choose) {
+            let img = document.getElementById('car' + choose).getAttribute('src');
+            if (img === "Images/Cars/Hinh1"+ choose+ ".png") {
+                document.getElementById('car' + choose).src = "Images/Cars/Hinh2"+ choose+ ".png";
+            } else if (img === "Images/Cars/Hinh2"+ choose+ ".png") {
+                document.getElementById('car'+ choose).src = "Images/Cars/Hinh3"+ choose+ ".png";
+            } else {
+                document.getElementById('car'+ choose).src = "Images/Cars/Hinh1"+ choose+ ".png";
+            }
+            if(check_img() === true)     alert('Bạn đã chiến thắng trò chơi này !!!.\nPhần thưởng của bạn là 1000$');
+        }
+        function check_img() {
+            let check = true;
+            for(let i=1; i<=3; i++){
+                for(let j of 'ABCDE'){
+                    if (document.getElementById('car' + j).getAttribute('src') !== "Images/Cars/Hinh"+ i + j +".png")
+                    {
+                        check = false;
+                        break;
+                    }
+                }
+                if(check === true)   return true;
+                check = true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

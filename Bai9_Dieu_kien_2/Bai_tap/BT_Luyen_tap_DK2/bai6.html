@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc nhất</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập hệ số của phương trình ax+b=0.\n Nhập a'));
+    let b = parseInt(prompt('Nhập b'));
+    if(a==0){
+        if(b==0)    alert('Phương trình đã cho có vô số nghiệm');
+        else alert('Phương trình đã cho vô nghiệm');
+    }
+    else alert('Phương trình đã cho có nghiệm duy nhất là ' + -b/a);
+</script>
+</body>
+</html>

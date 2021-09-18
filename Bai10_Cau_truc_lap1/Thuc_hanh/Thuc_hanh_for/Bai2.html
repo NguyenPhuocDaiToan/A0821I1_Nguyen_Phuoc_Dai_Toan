@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum=0;
+    let number = parseInt(prompt('Nhập vào một số dương: '));
+    if(number<=0)   alert('Số bạn vừa nhập không hợp lệ !!!');
+    else for(let i=1;i<=number;i++){
+        sum += i;
+    }
+    alert('Tổng của dãy số nguyên từ 1 đến ' + number + ' là: ' + sum);
+</script>
+</body>
+</html>

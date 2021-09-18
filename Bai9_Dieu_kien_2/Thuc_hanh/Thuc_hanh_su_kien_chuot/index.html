@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="ballImg" src="ball.png" alt="Trái bóng" style="width: 300px">
+    <p>Click button below to move the image to right</p>
+    <button onclick="moveRight();">Click Me</button>
+    <script>
+        let imgObj = document.getElementById('ballImg');
+        function init() {
+            imgObj = document.getElementById('ballImg');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10+ 'px';
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>

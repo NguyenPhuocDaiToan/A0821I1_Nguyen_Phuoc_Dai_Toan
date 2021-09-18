@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const LAI_SUAT = 0.01;
+        let tien_vay = parseInt(prompt('Nhập số tiền vay ban đầu!!!'));
+        let so_thang_vay = parseInt(prompt('Nhập số tháng vay: '));
+        let temp =0;
+        let result ='';
+        for(let i=1;i<=so_thang_vay;i++){
+            temp = tien_vay * LAI_SUAT;
+            tien_vay += temp;
+            result += 'Tiền lãi tháng ' + i + ' là ' + temp + '<br>';
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

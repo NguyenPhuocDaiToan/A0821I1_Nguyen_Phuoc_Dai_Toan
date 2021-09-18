@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height_rectangular = parseInt(prompt('Nhập vào chiều cao hình chữ nhật.'));
+    let full_width_edge = '';
+    let hollow_width_edge = '';
+    let rectangular = '';
+
+    for(let i=1;i<=height_rectangular*3;i++)    full_width_edge += '*';
+
+    for(let i=1;i<=height_rectangular*3;i++){
+        if(i==1 || i==height_rectangular*3)   hollow_width_edge += '*';
+        else hollow_width_edge += '&nbsp&nbsp';
+    }
+    for(let i=1;i<=height_rectangular;i++){
+        if(i==1 || i==height_rectangular)   rectangular += full_width_edge +'<br>';
+        else rectangular += hollow_width_edge +'<br>';
+    }
+    document.write(rectangular);
+</script>
+</body>
+</html>

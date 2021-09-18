@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoán số</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 200px">
+        <h1>Game đoán số</h1>
+        <button type="button" onclick="btn();">Chơi</button>
+    </div>
+    <script>
+        function btn() {
+            let a = parseInt(prompt('Nhập khoảng (a;b) bạn cần đoán.\nNhập a: '));
+            let b = parseInt(prompt('Nhập b: '));
+            if(a>=b){
+                do{
+                    alert('Khoảng bạn nhập không hợp lệ');
+                    let a = parseInt(prompt('Nhập lại khoảng (a;b) bạn cần đoán.\nNhập a: '));
+                    let b = parseInt(prompt('Nhập b: '));
+                } while (a>=b);
+            }
+            let number_random = Math.floor(Math.random() * (b-a) + a);
+            let guess_counts = 0;
+            while(guess_counts<3){
+                let guess_number_user = parseInt(prompt('Nhập số bạn cần đoán.'));
+                if(guess_number_user<a || guess_number_user>b){
+                    do{
+                        alert('Số bạn vừa nhập không nằm trong khoảng cần đoán!!!');
+                        let guess_number_user = parseInt(prompt('Nhập lại số bạn cần đoán.'));
+                    } while(guess_number_user<a || guess_number_user>b)
+                }
+                if(guess_number_user == number_random){
+                    alert('Chúc mừng bạn đã thắng trò chơi này!!!');
+                    return;
+                }
+                else if(guess_number_user>number_random)  alert('Số bạn vừa nhập lớn hơn số cần đoán!!!');
+                else alert('Số bạn vừa nhập nhỏ hơn số cần đoán!!!');
+                guess_counts++;
+                alert('Bạn còn ' + (3-guess_counts) +' lần chơi.');
+            }
+            alert('Số cần đoán là: ' + number_random+ '\nBạn đã thua cuộc, chúc bạn may mắn lần sau.');
+        }
+    </script>
+</body>
+</html>
