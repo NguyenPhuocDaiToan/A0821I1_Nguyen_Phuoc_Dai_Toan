@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Caro</title>
+    <style>
+        #caro{
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        #board-caro{
+            width: 100%;
+        }
+        #btn-change-value{
+            padding: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #cc2727;
+            background-color: #cca833;
+        }
+    </style>
 </head>
-<body>
 
+<body>
+    <div id="caro">
+        <p id="board-caro"></p>
+        <button type="button" id="btn-change-value" onclick="btn_change_value()">Change Value</button>
+    </div>
+
+    <script>
+        let board = [];
+        function init() {
+            // Creat array
+            for(let  i=0;i<5;i++){
+                board[i] = new Array(0, 0, 0, 0, 0);
+            }
+            display_array();
+        }
+        function display_array() {
+            // Display array
+            let data = '<table style="width: 100%;" cellpadding="5px">';
+            for (let i = 0; i < 5; i++) {
+                data += '<tr>';
+                for (let j = 0; j < 5; j++) {
+                    data += '<td>'+ board[i][j] + '</td>';
+                }
+                data += '</tr>';
+            }
+            data += '</table>';
+            document.getElementById('board-caro').innerHTML = data;
+        }
+        function btn_change_value() {
+            let positionX = prompt("X: ");
+            let positionY = prompt("Y: ");
+            board[positionX][positionY] = 'x';
+            display_array();
+        }
+        window.onload = init;
+    </script>
 </body>
 </html>

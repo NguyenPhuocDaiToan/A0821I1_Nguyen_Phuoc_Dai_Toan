@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('Nhập số: ');
+    let newString = '';
+    for(let i=0;i<number.length;i++){
+        if(i === number.length-1) newString += number[i];
+        else if(number[i]%2==0){
+            newString += number[i] + '-';
+        }
+        else newString += number[i];
+    }
+    document.write(newString);
+</script>
+</body>
+</html>

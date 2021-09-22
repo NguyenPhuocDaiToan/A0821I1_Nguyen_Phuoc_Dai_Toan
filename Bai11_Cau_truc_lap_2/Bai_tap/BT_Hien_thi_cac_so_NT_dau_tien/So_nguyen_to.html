@@ -10,17 +10,21 @@
     let count = 0;
     let check = true;
     let result = 'Số nguyên tố: ';
-    for(let i = 2;i<=100;i++){
+    let i = 2;
+    while(1){
         for(let j=2;j<=Math.sqrt(i);j++){
-            if(i % j == 0)  check = false;
-            if(check == false)    break;
+            if(i % j === 0){
+                check = false;
+                break;
+            }
         }
-        if(check == true){
+        if(check === true){
             result = result + i + ' ';
             count++;
-            if(count>=primes)    break;
+            if(count===primes)    break;
         }
         check = true;
+        i++;
     }
     document.write(result);
 </script>

@@ -6,14 +6,16 @@
 </head>
 <body>
 <script>
-    let temperature
+    let temperature;
     do{
         temperature = parseInt(prompt('Nhập nhiệt độ hiện tại.\nNhập -1 để thoát chương trình'));
-        if(temperature==-1) break;
         if(temperature>100) alert('Vui lòng bạn giảm nhiệt độ để bảo đảm sức khỏe.');
         else if(temperature<20) alert('Vui lòng bạn tăng nhiệt độ để bảo đảm sức khỏe.')
-        else alert('Nhiệt độ ổn định.');
-    } while(1)
+        else{
+            alert('Nhiệt độ phù hợp.');
+            break;
+        }
+    } while(temperature<20 || temperature>100)
 </script>
 </body>
 </html>
