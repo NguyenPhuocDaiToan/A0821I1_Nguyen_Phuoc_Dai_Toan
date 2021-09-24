@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = Array(10);
+  let string = '', result = '';;
+  let count=0;
+  let temp;
+  for(let i=0; i<10; i++)
+  {
+      arr[i] = Math.floor(Math.random()*20);
+      temp = 'arr[' + i + '] = ' + arr[i];
+      string += temp + '<br>';
+      if(arr[i]>=10)
+      {
+          count++;
+          result += temp + '<br>';
+      }
+  }
+  document.write('Chuỗi ban đầu là: ' + '<br>' + string + '<br>');
+  document.write('Có ' + count + ' phần tử lớn hơn hoặc bằng 10:' + '<br>' + result);
+</script>
+</body>
+</html>

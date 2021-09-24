@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caro</title>
+    <style>
+        #caro{
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        #board-caro{
+            width: 100%;
+        }
+        #btn-change-value{
+            padding: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #cc2727;
+            background-color: #cca833;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caro">
+        <p id="board-caro"></p>
+        <button type="button" id="btn-change-value" onclick="btn_change_value()">Change Value</button>
+    </div>
+
+    <script>
+        let board = [];
+        let count=1;
+        let result = false;
+        function init() {
+            // Creat array
+            for(let i=0;i<5;i++){
+                board[i] = Array('.', '.', '.', '.', '.');
+            }
+            display_array();
+        }
+        function display_array() {
+            // Display array
+            let data = '<table style="width: 100%;" cellpadding="5px">';
+            for (let i = 0; i < 5; i++) {
+                data += '<tr>';
+                for (let j = 0; j < 5; j++) {
+                    data += '<td>'+ board[i][j] + '</td>';
+                }
+                data += '</tr>';
+            }
+            data += '</table>';
+            document.getElementById('board-caro').innerHTML = data;
+        }
+        function btn_change_value() {
+            if(result === true)
+            {
+                alert('Ván game đã kết thúc.');
+                return;
+            }
+            let positionX, positionY;
+            if(count%2===1)
+            {
+                while(1)
+                {
+                    positionX = parseInt(prompt("Người chơi 1 nhập vị trí cần đánh.\nX: "));
+                    positionY = parseInt(prompt("Y: "));
+                    if(board[positionX][positionY] !== '.')
+                    {
+                        alert("Ô này người chơi đã nhập.\n Vui lòng nhập lại");
+                    }
+                    else break;
+                }
+
+                board[positionX][positionY] = 'X';
+                if(check(positionX, positionY) === true)
+                {
+                    result = true;
+                    alert('Người chơi 1 đã chiến thắng !!!');
+                }
+            }
+            else
+            {
+                while(1)
+                {
+                    positionX = parseInt(prompt("Người chơi 2 nhập vị trí cần đánh.\nX: "));
+                    positionY = parseInt(prompt("Y: "));
+                    if(board[positionX][positionY] !== '.')
+                    {
+                        alert("Ô này người chơi đã nhập.\n Vui lòng nhập lại");
+                    }
+                    else break;
+                }
+                board[positionX][positionY] = 'O';
+                if(check(positionX, positionY) === true)
+                {
+                    result = true;
+                    alert('Người chơi 2 đã chiến thắng !!!');
+                }
+            }
+            count++;
+            display_array();
+        }
+        function check(x,y)
+        {
+            // Dò theo dòng
+            if(board[x][y] === board[x][y-1] && board[x][y] === board[x][y+1])  return true;
+            if(board[x][y] === board[x][y-1] && board[x][y-1]===board[x][y-2])  return true;
+            if(board[x][y] === board[x][y+1] && board[x][y+1]===board[x][y+2])  return true;
+
+            // Dò theo cột
+            if(board[x][y] === board[x-1][y] && board[x][y] === board[x+1][y])  return true;
+            if(board[x][y] === board[x-1][y] && board[x-1][y] === board[x-2][y])  return true;
+            if(board[x][y] === board[x+1][y] && board[x+1][y] === board[x+2][y])  return true;
+
+            // Dò theo đường chéo chính
+            if(board[x][y] === board[x-1][y-1] && board[x][y] === board[x+1][y+1])  return true;
+            if(board[x][y] === board[x-1][y-1] && board[x-1][y-1] === board[x-2][y-2])  return true;
+            if(board[x][y] === board[x+1][y+1] && board[x+1][y+1] === board[x+2][y+2])  return true;
+
+            // Dò theo đường chéo phụ
+            if(board[x][y] === board[x+1][y-1] && board[x][y] === board[x-1][y+1])  return true;
+            if(board[x][y] === board[x+1][y-1] && board[x][y] === board[x+2][y-2])  return true;
+            if(board[x][y] === board[x-1][y+1] && board[x][y] === board[x-2][y+2])  return true;
+            return false;
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>
+</body>
+</html>

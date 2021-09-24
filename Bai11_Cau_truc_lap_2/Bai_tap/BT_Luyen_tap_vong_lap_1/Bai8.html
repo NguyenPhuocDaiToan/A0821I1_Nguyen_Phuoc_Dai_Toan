@@ -32,7 +32,7 @@
                         let guess_number_user = parseInt(prompt('Nhập lại số bạn cần đoán.'));
                     } while(guess_number_user<a || guess_number_user>b)
                 }
-                if(guess_number_user == number_random){
+                if(guess_number_user === number_random){
                     alert('Chúc mừng bạn đã thắng trò chơi này!!!');
                     return;
                 }

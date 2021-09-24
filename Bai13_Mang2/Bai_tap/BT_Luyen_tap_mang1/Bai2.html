@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max trong mảng</title>
+</head>
+<body>
+<script>
+  let arr = [100, 2, 99, 1000, 752, 7339, 383, 782, 792, 7392];
+  let max = arr[0];
+  let maxIndex = 0;
+  document.write('arr[' + 0 +'] = ' + arr[0] + '<br>');
+  for(let i=1;i<10;i++)
+  {
+      document.write('arr[' + i +'] = ' + arr[i] + '<br>');
+      if(arr[i]>max)
+      {
+          max = arr[i];
+          maxIndex = i;
+      }
+  }
+  document.write('Phần tử lớn nhất trong mảng là ' + max
+      + '<br>' + 'Ở vị trí '+ maxIndex + ' trong mảng');
+
+</script>
+</body>
+</html>

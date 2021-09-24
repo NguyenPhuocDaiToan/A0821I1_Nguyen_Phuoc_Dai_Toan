@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #main{
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    #text{
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Type anthing showly</h1>
+        <textarea id="text" onkeydown="text();"></textarea>
+    </div>
+    <script>
+        const TEXT = "TÔI LÀ SINH VIÊN CÔNG NGHỆ THÔNG TIN DUT !!!";
+        let max = TEXT.length;
+        let result = '';
+        function text()
+        {
+            let t = document.getElementById('text').value;
+            let j = t.length;
+            for(let i=0;i<j;i++)
+            {
+                if(i===max)
+                {
+                    result = '';
+                    document.getElementById('text').value = '';
+                    break;
+                }
+                result += TEXT[i];
+            }
+            document.getElementById('text').value = result;
+            result = '';
+            setTimeout('text()', 1);
+        }
+    </script>
+</body>
+</html>

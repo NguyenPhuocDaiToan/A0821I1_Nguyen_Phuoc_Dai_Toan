@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Value(A,B)</title>
+</head>
+<body>
+<script>
+    let a = Array(20);
+    let b = Array(20);
+    let checkA = Array();
+    let missingValue = Array();
+    // Khởi tạo giá trị mảng
+    for(let i=0; i<20; i++)
+    {
+        a[i] = Math.floor(Math.random()*100);
+        b[i] = Math.floor(Math.random()*100);
+        checkA[a[i]] = true;
+    }
+    // In mảng a, b;
+    document.write('Mảng a là: ' + a + '<br>');
+    document.write('Mảng b là: ' + b + '<br>');
+    // Hàm so sánh để sắp xếp
+    function compare(x, y)
+    {
+        return x - y;
+    }
+    let count = 0;
+    b.sort(compare);
+    //Kiểm tra và khởi tạo giá trị hàm missingValue
+    for(let i=0; i<20; i++) // Duyệt các phần tử mảng b
+    {
+        if(checkA[b[i]] !== true && b[i] !== b[i+1]) // Kiểm tra mảng b có trùng a không
+        {
+            missingValue[count] = b[i];
+            count++;
+        }
+    }
+    document.write('Missing Value(A,B): ' + missingValue + '<br>');
+</script>
+</body>
+</html>
