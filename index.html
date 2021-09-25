@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = parseInt(prompt("Nhập số cho mảng A : "));
+    let arr2 = parseInt(prompt("Nhập số cho mảng B : "));
+    let arrA = Array(arr1);
+    let arrB = Array(arr2);
+    let miss = Array();
+    let check = Array();
+    let count = 0;
+    for (let i = 0; i < arrA.length; i++) {
+        arrA[i] = parseInt(prompt("arrA[" + (i + 1) + "]= "));
+    }
+    for (let i = 0; i < arrB.length; i++) {
+        arrB[i] = parseInt(prompt("arrB[" + (i + 1) + "]= "));
+        check[arrA[i]] = true;
+        if (check[arrB[i]] !== true && arrB[i] !== arrB[i + 1]) {
+            miss[count] = arrB[i];
+            count++;
+        }
+    }
+
+    function compare(x, y) {
+        return x - y;
+    }
+
+    arrA.sort(compare);
+    arrB.sort(compare);
+    document.write("Mảng A là : " + arrA + "<br>");
+    document.write("Mảng B là : " + arrB + "<br>");
+    document.write("missingValue(A, B) : " + miss);
+</script>
+</body>
+</html>

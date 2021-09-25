@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers_Element_Array = parseInt(prompt('Nhập số phần tử của mảng.'));
+    let arr = Array(numbers_Element_Array);
+
+    for(let i=0;i<numbers_Element_Array;i++)
+    {
+        arr[i] = parseInt(prompt('Nhập giá trị arr[' + i + ']'));
+    }
+
+    let V = parseInt(prompt('Nhập phần tử V cần kiểm tra'));
+    function check(element)
+    {
+        for(let i=0;i<numbers_Element_Array;i++)
+        {
+            if(element === arr[i])
+            {
+                for(let j=i;j<numbers_Element_Array-1;j++)
+                {
+                    arr[j] = arr[j+1];
+                }
+                numbers_Element_Array--;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    if(check(V))
+    {
+        document.write(V + ' is in the array');
+    }
+    else{
+        document.write(V + ' is not in the array');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt('Nhập vào số lượng phần tử của mảng'));
+    let array = Array(number);
+    let sum = 0;
+    let max = 0;
+    for(let i=0;i<number;i++)
+    {
+        array[i] = Math.floor(Math.random()*100);
+        sum += array[i];
+        if(array[i]>max)    max = array[i];
+    }
+    document.write('Các phần tử trong maảng là: ' + array + '<br>');
+    document.write('Phần tử lớn nhất trong mảng là: ' + max + '<br>');
+    document.write('Giá trị trung bình của mảng là: ' + sum/10 + '<br>');
+</script>
+</body>
+</html>

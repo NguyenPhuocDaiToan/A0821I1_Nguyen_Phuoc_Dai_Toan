@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers_Element_Array = parseInt(prompt('Nhập số lượng phần tử của mảng'));
+    let array = Array(numbers_Element_Array);
+    let reverseArray = Array(numbers_Element_Array);
+    for(let i=0;i<numbers_Element_Array;i++)
+    {
+        array[i] = Math.floor(Math.random()*(-100) + 50);
+        reverseArray[numbers_Element_Array -1 - i] = array[i];
+    }
+    document.write('Mảng array là: ' + array + '<br>');
+    document.write('Mảng đảo ngược là: ' + reverseArray + '<br>');
+</script>
+</body>
+</html>
