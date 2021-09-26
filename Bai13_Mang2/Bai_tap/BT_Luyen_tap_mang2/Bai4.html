@@ -6,13 +6,16 @@
 </head>
 <body>
 <script>
-    let a = 'ddninl12n38nd19lu17ud';
-    let count=0;
-    for(let i = 0;i<a.length;i++)
+    let a = '    Nguyễn            Phước Đại Toàn        ';
+    let count=1;
+    a = a.trim();
+    for(let i=0;i<a.length-1;i++)
     {
-        if(a[i]>='1' && a[i]<='9')  count++;
+        if(a[i]===' ' && a[i+1] !== ' ')
+            count++;
     }
-    document.write('Chuỗi có ' + count + ' kí tự số.');
+    alert(count);
 </script>
 </body>
 </html>
+
