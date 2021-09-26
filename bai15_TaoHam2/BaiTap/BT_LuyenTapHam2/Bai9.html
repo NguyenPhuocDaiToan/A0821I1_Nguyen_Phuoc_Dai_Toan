@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c = prompt('Nhập vào kí tự cần kiểm tra');
+    let char = ['d', 'a', 'i', 't', 'o', 'a', 'n'];
+    let count = checkChar(c, ...char);
+    if(count===-1)  alert(c +' không tồn tại trong mảng');
+    else alert(c + ' xuất hiện ' + count + ' lần trong mảng');
+    function checkChar(value, ...arr) {
+        let count=0;
+        for(let i=0;i<arr.length;i++)
+            if(value === arr[i])      count++;
+
+        if(count===0)   return -1;
+        else return count;
+    }
+</script>
+</body>
+</html>

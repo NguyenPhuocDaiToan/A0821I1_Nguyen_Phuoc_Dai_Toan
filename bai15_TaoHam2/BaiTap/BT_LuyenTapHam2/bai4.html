@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let char = prompt('Nhập kí tự cần kiểm tra');
+    let check = checkNumber(char);
+    if(check)   alert(char + ' là một kí tự số.');
+    else alert(char + ' không phải là kí tự số');
+    function checkNumber(c) {
+        if(c>='1'&& c<='9') return true;
+        else return false;
+    }
+</script>
+</body>
+</html>
