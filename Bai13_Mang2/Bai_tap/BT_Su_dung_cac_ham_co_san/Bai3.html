@@ -5,25 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="text" id="text-English">
-    <button onclick="btn_search()">Tìm kiếm</button>
-    <p id="result"></p>
-    <script>
-        let arrayEnglish = ["one", "two", "condition", "parameter"];
-        let arrayViet = ["Số một", "Số hai", "Điều kiện", "Tham số"];
-        function btn_search(){
-            let inputText = document.getElementById('text-English').value;
-            let check = false;
-            for(let i=0;i<arrayEnglish.length;i++)
-                if(arrayEnglish[i] === inputText)
-                {
-                    let result = arrayEnglish[i] + ': ' + arrayViet[i];
-                    document.getElementById('result').innerText = result;
-                    check = true;
-                    break;
-                }
-            if(check===false)   document.getElementById('result').innerText = 'Không tìm thấy !!!';
-        }
-    </script>
+<script>
+    let text = prompt("Nhập chuỗi.");
+    let newText = '';
+    for(let i=0;i<text.length;i++)
+    {
+        if(text[i] >='a' && text[i]<='z')
+            newText += text[i].toUpperCase();
+        else if(text[i] >='A' && text[i]<='Z')
+            newText += text[i].toLowerCase();
+    }
+    document.write(newText);
+</script>
 </body>
 </html>
