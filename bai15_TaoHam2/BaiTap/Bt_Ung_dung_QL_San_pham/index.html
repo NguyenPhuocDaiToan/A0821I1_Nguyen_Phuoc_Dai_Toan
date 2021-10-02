@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class='pad-16' id='main'>
+        <h2 class='pad-16'>Add New Product</h2>
+        <div class='pad-16' id='input-product'>
+            <input type="text" placeholder="New Product" id="input-new-product">
+            <button class="btn" onclick="btnAddProduct()">Add</button>
+        </div>
+        <h2 class="pad-16">Display All Product</h2>
+        <div id='display-product'></div>
+    </div>
+    <script>
+        let products = Array();
+        let count = 0;
+
+        // Thêm sản phẩm
+        function btnAddProduct() {
+            products[count] = document.getElementById('input-new-product').value;
+            if(products[count] !== '')  count++;
+            document.getElementById('input-new-product').value = '';
+            display();
+        }
+
+        // Hiển thị sản phẩm
+        function display() {
+            document.getElementById('display-product').innerHTML = '';
+            let background = '';
+            if(count!==0){
+                let result = '';
+                result =`<div>
+                            <p id='inline-block' class='col width-col-1'>&nbsp</p>
+                            <p id='inline-block' class='col width-col-2'><b>Product Name</b></p>
+                            <p id='inline-block' class='col'>&nbsp</p>
+                            <p id='inline-block' class='col'><strong>${count} product</strong></p>
+                        </div>`
+                for(let i=0;i<count;i++)
+                {
+                    if(i%2===0)  background = 'background-white';
+                    else background = 'background-grey';
+                    result += `<div id='${background}' class="row-display">
+                            <p id='inline-block' class='col width-col-1'>${i+1}.</p>
+                            <p id='inline-block' class='col width-col-2'>${products[i]}</p>
+                            <p id='inline-block' class='col'><button onclick="editItem(${i})" class="btn">Add</button></p>
+                            <p id='inline-block' class='col'><button onclick="deleteItem(${i})" class="btn">Delete</button></p>
+                        </div>`
+                }
+                document.getElementById('display-product').innerHTML = result;
+            }
+        }
+        // Sửa thông tin sản phẩm
+        function editItem(index) {
+            let newItem = prompt("Nhập phần tử mới.");
+            if(newItem !== null)    products[index] = newItem;
+            display();
+        }
+        // Xóa sản phẩm
+        function deleteItem(index) {
+            products.splice(index,1);
+            count--;
+            display();
+        }
+    </script>
+</body>
+</html>

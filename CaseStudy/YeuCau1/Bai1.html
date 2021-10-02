@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let width = parseInt(prompt("Nhập chiều dài hình chữ nhật"));
+    let height = parseInt(prompt("Nhập chiều cao hình chữ nhật"));
+    let canh_dac = '';
+    let canh_rong = '';
+    // width = 5
+    for(let i=1;i<=width;i++)
+    {
+        canh_dac += '*';
+
+        if(i===1 || i===width)  canh_rong += '*';
+        else canh_rong += '&nbsp&nbsp';
+    }
+    for(let i=1;i<=height;i++)
+    {
+        if(i===1 || i===height) document.write(canh_dac + '<br>');
+        else document.write(canh_rong + '<br>');
+    }
+</script>
+</body>
+</html>

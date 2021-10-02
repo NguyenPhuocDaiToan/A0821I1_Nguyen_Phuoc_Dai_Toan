@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pad-16{
+    padding: 16px !important;
+}
+#inline-block{
+    display: inline-block !important;
+}
+#background-white{
+    background-color: #fff !important;
+}
+#background-grey{
+    background-color: rgba(221, 220, 220, 0.938) !important;
+}
+#main{
+    width: 600px;
+}
+#input-product{
+    background-color: rgba(221, 220, 220, 0.938) !important;
+    line-height: 60px;
+}
+#input-new-product{
+    padding: 4px;
+}
+.btn{
+    padding: 4px 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    background-color: rgb(54, 179, 64);
+}
+.row-display{
+    margin: 4px;
+    padding: 4px 0;
+}
+.col{
+    padding: 4px;
+}
+.width-col-1{
+    width: 30px;
+}
+.width-col-2{
+    width: 300px;
+}

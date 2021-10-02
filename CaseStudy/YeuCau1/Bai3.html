@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt('Nhập chiều cao tam giác'));
+    for(let i = 1 ; i <= height ; i++) {
+        for (let j = height; j > i; j--)     document.write("&nbsp&nbsp")
+        for(let j = 1 ; j<= (2*i-1) ; j++) {
+            if(i===height)   document.write("*");
+            else    document.write("*")
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

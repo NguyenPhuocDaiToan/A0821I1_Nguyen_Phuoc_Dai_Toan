@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text = prompt('Nhập chuỗi cần kiểm tra tính đối xứng.');
+    text = text.trim();
+    let lengthText = text.length-1;
+    if(isPalindrome(text, 0, lengthText))     alert(text + ' là chuỗi đối xứng.');
+    else alert(text + ' không phải là chuỗi đối xứng.');
+
+    function isPalindrome(string, left, right){
+        if(left>=right) return true;
+        else
+        {
+            if(string[left]===string[right])
+                return isPalindrome(string, left+1, right-1);
+            else    return false;
+        }
+    }
+</script>
+</body>
+</html>
