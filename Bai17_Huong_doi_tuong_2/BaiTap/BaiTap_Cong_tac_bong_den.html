@@ -26,9 +26,11 @@
             this.lamp = lamp;
         }
         switchOff() {
+            this.status = false;
             this.lamp.turnOff();
         }
         switchOn(){
+            this.status = true;
             this.lamp.turnOn();
         }
     }
