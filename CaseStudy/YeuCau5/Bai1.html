@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Hàm tính tổng các số chẵn
+    function sumArr(arr, row, col) {
+        let sum = 0;
+        for(let i=0;i<row;i++)
+            for(let j=0;j<col;j++)
+                if(arr[i][j]%2===0)  sum+=arr[i][j];
+
+        return sum;
+    }
+
+    let row = parseInt(prompt("Nhập vào số hàng"));
+    let col = parseInt(prompt("Nhập vào số cột"));
+    let arr = Array(row);
+    // Khởi tạo giá trị mảng 2 chiều
+    for(let i=0;i<row;i++)
+    {
+        arr[i] = Array(col);
+        for(let j=0;j<col;j++)
+            arr[i][j] = Math.floor(Math.random()*100);
+    }
+
+    let sum = sumArr(arr, row, col);
+    document.write('Tổng các số chẵn là ' + sum);
+
+</script>
+</body>
+</html>

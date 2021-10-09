@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let row = parseInt(prompt("Nhập vào số hàng"));
+    let col = parseInt(prompt("Nhập vào số cột"));
+    let arr = Array(row);
+    // Khởi tạo giá trị mảng 2 chiều
+    let check = [];
+    let arrString = '';
+    for(let i=0;i<row;i++)
+    {
+        arr[i] = Array(col);
+        for(let j=0;j<col;j++)
+        {
+            arr[i][j] = Math.floor(Math.random()*100);
+            check[arr[i][j]] = 1;
+            arrString += arr[i][j] + '&nbsp&nbsp&nbsp&nbsp';
+        }
+        arrString += '<br>';
+    }
+    document.write("Mảng của bạn là : <br>" + arrString);
+    soNguyenTo(arr, check, row, col);
+    function soNguyenTo(arr, check, row, col) {
+        let result = '';
+        let count=0;
+        let arrSNT = [];
+        for(let i=0;i<row;i++)
+            for(let j=0;j<col;j++)
+            {
+                if(checkSNT(arr[i][j]) && check[arr[i][j]] === 1)
+                {
+                    check[arr[i][j]] = 0;
+                    arrSNT[count] = arr[i][j];
+                    count++;
+                }
+            }
+        arrSNT.sort(function (a,b){
+                return a-b;
+            }
+        );
+        function checkSNT(value) {
+            if(value<2) return false;
+            for(let i=2;i<=Math.sqrt(value);i++)
+                if(value%i===0) return false;
+            return true;
+        }
+        document.write("Có " + count + " số nguyên tố trong mảng<br>");
+        document.write("Dãy số nguyên tố trong mảng là " + arrSNT);
+    }
+</script>
+</body>
+</html>
