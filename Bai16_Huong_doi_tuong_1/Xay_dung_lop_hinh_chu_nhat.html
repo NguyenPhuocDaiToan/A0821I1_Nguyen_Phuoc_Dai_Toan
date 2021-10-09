@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        perimeter(){
+            return 2*(this.height + this.width);
+        }
+        area(){
+            return this.height*this.width;
+        }
+        setWidth(width){
+            this.width = width;
+        }
+        setHeight(height){
+            this.height = height;
+        }
+        drawRectagle()
+        {
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle="#fa4b2a";
+            ctx.fillRect(0, 0, this.width, this.height);
+            //ctx.moveTo(0,0);
+            //ctx.lineTo(0,this.height);
+           // ctx.lineTo(this.width,this.height);
+           // ctx.lineTo(this.width,0);
+            //ctx.lineTo(0,0);
+        }
+    }
+    let rectangle = new Rectangle(1000,1000);
+    rectangle.drawRectagle();
+    rectangle.setWidth(100);
+    rectangle.setHeight(100);
+    let perimeter = rectangle.perimeter();
+    let area = rectangle.area();
+    alert("Chu vi hình chữ nhật là " + perimeter
+    + "\nDiện tích hình chữ nhật là " + area);
+</script>
+</body>
+</html>

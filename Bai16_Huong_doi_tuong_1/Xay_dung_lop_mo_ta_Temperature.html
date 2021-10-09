@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+        convertDoF() {
+            return this.doC*1.8+32;
+        }
+        convertDoK() {
+            return this.doC + 273.15;
+        }
+    }
+    let temperature = new Temperature(25);
+    let doF = temperature.convertDoF();
+    let doK = temperature.convertDoK();
+    alert("25 độ C = " + doF + " độ F = " +doK + " độ K" );
+</script>
+</body>
+</html>

@@ -2,9 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Menu</title>
 </head>
 <body>
+    <div id="main">
+        <table cellspacing="12px" id="menu">
+            <th colspan="2" id="header-menu">Menu</th>
+            <tr>
+                <td><button onclick="btn(0)">1. Cafe</button></td>
+                <td><button onclick="btn(1)">2. Cam vắt</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn(2)">3. Nước lọc</button></td>
+                <td><button onclick="btn(3)">4. Nước dừa</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn(4)">5. Nước ép cà rốt</button></td>
+                <td><button onclick="btn(5)">6. Nước ép cà chua</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn(6)">7. Nước ngọt</button></td>
+                <td><button onclick="btn(7)">8. Nước trà đá</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn(8)">9. Trà sữa</button></td>
+                <td><button onclick="btn(9)">10. Trà đào</button></td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td><button id="bill-please" onclick="billPlease()">Tính tiền</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="bill">
+        <p>----------------------- <b>BILLS</b> ----------------------</p>
+        <p id="bills-money"></p>
+    </div>
 
+    <script>
+        let drinks = ["Cafe", "Cam vắt", "Nước lọc", "Nước dừa", "Nước ép cà rốt"
+                    , "Nước ép cà chua", "Nước ngọt", "Nước trà", "Trà sữa", "Trà đào"];
+        let moneyDrinks = [20000, 15000, 5000, 20000, 15000, 15000, 10000, 5000, 30000, 25000];
+        let sumMoney = 0;
+        let count = 1;
+        let check = 0;
+        let bills = `<table>
+                        <tr>
+                            <th width="15%"></th>
+                            <th width="45%">Đồ uống</th>
+                            <th width="20%">SL</th>
+                            <th width="20%">Giá tiền</th>
+                        </tr>`;
+        let quantity = '';
+        function btn(indexDrink) {
+            quantity = prompt('Mời bạn nhập số lượng đồ uống ' + drinks[indexDrink]
+                        + '\nVới mệnh giá ' + moneyDrinks[indexDrink] + 'VNĐ/ly' )
+            if(check === 1)
+            {
+                bills = `<table>
+                        <tr>
+                            <th width="15%"></th>
+                            <th width="50%">Đồ uống</th>
+                            <th width="15%">SL</th>
+                            <th width="20%">Giá tiền</th>
+                        </tr>`;
+                count = 1;
+                sumMoney = 0;
+                check = 0;
+            }
+            sumMoney += moneyDrinks[indexDrink]*quantity;
+            bills += `<tr>
+                            <td>${count}.</td>
+                            <td>${drinks[indexDrink]}</td>
+                            <td style="text-align: center">${quantity}</td>
+                            <td width="30%" style="text-align: right">${moneyDrinks[indexDrink]*quantity}</td>
+                       </tr>`;
+            count++;
+            document.getElementById('bills-money').innerHTML = bills;
+        }
+        function billPlease() {
+            bills += `<tr>
+                        <td><b>$</b></td>
+                        <td><b>Tổng cộng</b></td>
+                        <td>&nbsp</td>
+                        <td style="text-align: right"><b>${sumMoney}</b></td>
+                      </tr>
+                   </table>`
+            document.getElementById('bills-money').innerHTML = bills;
+            check = 1;
+        }
+    </script>
 </body>
 </html>

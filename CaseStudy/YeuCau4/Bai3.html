@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = prompt('Nhập vào chuỗi s1');
+    let s2 = prompt('Nhập vào chuỗi s2');
+    let checks1 = [];
+    let checks2 = [];
+    let countS1 = [];
+    let countS2 = [];
+    let temp = 0;
+    let common = 0;
+    check(s1, checks1, countS1);
+    check(s2, checks2, countS2);
+    for(let i=0;i<s1.length;i++)
+    {
+        let temp = s1[i].charCodeAt();
+        if(checks2[temp] === true)
+        {
+            if(countS1[temp] < countS2[temp]) common += countS1[temp];
+            else common += countS2[temp];
+            checks2[temp] = false;
+        }
+    }
+    alert(common);
+    function check(s, arr, count)
+    {
+        for(let i=0;i<s.length;i++)
+        {
+            temp = s[i].charCodeAt();
+            if(arr[temp] === true)
+            {
+                count[temp]++;
+            }
+            else{
+                arr[temp] = true;
+                count[temp] = 1;
+            }
+        }
+    }
+</script>
+</body>
+</html>

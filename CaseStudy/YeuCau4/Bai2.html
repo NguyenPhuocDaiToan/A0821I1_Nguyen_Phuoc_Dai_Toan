@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = prompt('Nhập vào chuỗi s.');
+    let count = 0;
+    let array = Array();
+
+    for(let i=0;i<s.length;i++)
+    {
+        let number = s[i].charCodeAt();
+        if(array[number] !== true)
+        {
+            count++;
+            array[number] = true;
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>

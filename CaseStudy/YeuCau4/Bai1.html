@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = prompt('Nhập vào chuỗi cần chuẩn hóa.');
+    let newString = s.toLowerCase();
+    newString = newString.replace(/ +/g, " ");
+    let newText = convert(newString);
+    let maxWord = find_Max_Word(newText);
+    alert(newText + ' ' +maxWord);
+    function convert(s) {
+        let text = s[0].toUpperCase();
+        for(let i = 1; i<s.length;i++)
+        {
+            if(s[i] === ' ')
+            {
+                text += ' ' + s[i+1].toUpperCase();
+                i++;
+            }
+            else text += s[i];
+        }
+        return text;
+    }
+    function find_Max_Word(newText) {
+        let max = 0;
+        let count = 0;
+        let s = '';
+        let temp = '';
+        for(let i=0;i<newText.length;i++)
+        {
+            if(newText[i] !== ' ')
+            {
+                count++;
+                temp += newText[i];
+            }
+            else{
+                if(count>max)
+                {
+                    s = temp;
+                    temp = '';
+                    max = count;
+                }
+                count=0;
+            }
+        }
+        return s;
+    }
+
+</script>
+</body>
+</html>

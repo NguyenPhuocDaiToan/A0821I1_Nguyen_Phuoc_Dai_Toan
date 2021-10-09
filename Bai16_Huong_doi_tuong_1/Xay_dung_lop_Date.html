@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Date{
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        getDay(){
+            return this.day;
+        }
+        getMonth(){
+            return this.month;
+        }
+        getYear(){
+            return this.year;
+        }
+        setDay(day){
+            this.day = day;
+        }
+        setMonth(month){
+            this.month = month;
+        }
+        setYear(year){
+            this.year = year;
+        }
+        setDate()
+        {
+            this.day = 1;
+            this.month = 1;
+            this.year = 1970;
+        }
+        to_string(){
+            let d = '', m = '', y = '';
+            if(this.day<10) d = '0' + this.day;
+            if(this.month<10)   m = '0' + this.month;
+            y = this.year;
+            return d + "/" + m + "/" + y;
+        }
+    }
+    let date = new Date(8,10,2021);
+    // let day = date.getDay();
+    // let month = date.getMonth();
+    // let year = date.getYear();
+    date.setDay(9);
+    date.setMonth(10);
+    date.setYear(2021);
+    alert("Date: "+ date.day + "/" + date.month + "/" + date.year);
+
+
+    let myDate = new Date(2,2,2021);
+    alert("My date: " + myDate.day + "/" + myDate.month + "/" + myDate.year);
+    myDate.setDate();
+    alert("Set my date: " + myDate.day + "/" + myDate.month + "/" + myDate.year);
+    let convertDateToString = myDate.to_string();
+    alert("Convert date to string: " + convertDateToString);
+</script>
+</body>
+</html>

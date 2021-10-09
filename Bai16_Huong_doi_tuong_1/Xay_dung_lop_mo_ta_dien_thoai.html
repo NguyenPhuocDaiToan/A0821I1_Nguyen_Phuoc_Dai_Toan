@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Telephone {
+      constructor() {
+          this.pin = 100;
+          this.send = [];
+          this.receive = [];
+          this.isOn = true;
+      }
+      sendMessage(sendMess, telephone){
+            if(this.pin>0){
+                this.send.push(sendMess);
+                telephone.receiveMessage(sendMess);
+                this.pin--;
+            }
+            else alert("Máy bạn đã hết pin!!!");
+      }
+      receiveMessage(receiveMess){
+            this.receive.push(receiveMess);
+      }
+      setStatus(){
+          let isOff = confirm("Bạn có muốn tắt điện thoại không");
+          if(isOff) this.isOn = false;
+      }
+      chargeTelephone(){
+          this.pin = 100;
+      }
+      getStatus(){
+          return this.isOn;
+      }
+      getPin(){
+          return this.pin;
+      }
+  }
+  let iphone = new Telephone();
+  let nokia = new Telephone();
+  iphone.sendMessage("Hello toàn tương lai.", nokia);
+  iphone.sendMessage("Cố gắng làm ra tiền.", nokia);
+  iphone.sendMessage("Chúc thành công.", nokia);
+  alert(iphone.send);
+  alert(iphone.getPin());
+  alert(iphone.getStatus());
+</script>
+</body>
+</html>
