@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46aa04f7-580b-4114-8726-b13a0e721424" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Module1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/BaiTap/ChuyenDoiTienTe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/BaiTap/HienThiLoiChao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/BaiTap/UngDungDocSoThanhChu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/DeclareVariable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/LeapYear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/LinearEquationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/MBI_Caculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/ShowTimeOfSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/SoNgayTrongThang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss1_IntroduceJava/ThucHanh/SuDungToanTu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/BaiTap/DisplayPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/BaiTap/DisplayPrimeLess100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/BaiTap/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/ThucHanh/GreatCommonFactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/ThucHanh/ThietKeMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/ThucHanh/UngDungTinhTienLai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss2_LoopJava/ThucHanh/isPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/AddElementArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/DeleteElementArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/DemSoLanXuatHien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/FindMinArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/MergeArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/PhanTuLonNhatMang2Chieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/TinhTong1Cot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/BaiTap/TongPhanTuDuongCheo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/ConvertTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/DaoNguocMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/DemSoLuongThiDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/FindElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/FindMaxElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/ss3_Array_Method/ThucHanh/FindMinArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20BNlfQYLNbEgRU9hwDi5Axh60z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46aa04f7-580b-4114-8726-b13a0e721424" name="Default Changelist" comment="" />
+      <created>1635514174076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635514174076</updated>
+      <workItem from="1635514175176" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
