@@ -6,7 +6,7 @@ public class isPrime {
     public static void main(String[] args) {
         int a;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào số nguyên cần kiểm tra");
+        System.out.print("Nhập vào số nguyên cần kiểm tra: ");
         a = sc.nextInt();
         if(a<2) System.out.println(a + " is not a prime");
         else{
@@ -24,3 +24,5 @@ public class isPrime {
         }
     }
 }
+
+
