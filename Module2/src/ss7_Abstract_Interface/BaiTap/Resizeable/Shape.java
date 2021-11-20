@@ -1,6 +1,6 @@
 package ss7_Abstract_Interface.BaiTap.Resizeable;
 
-public abstract class Shape implements Resizeable{
+public abstract class Shape implements Resizeable {
     private String color;
     private boolean filled;
     public Shape() {
@@ -11,6 +11,7 @@ public abstract class Shape implements Resizeable{
         this.color =  color;
         this.filled = filled;
     }
+    public abstract double getArea();
     public void setColor(String color) {
         this.color = color;
     }

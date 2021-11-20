@@ -46,7 +46,6 @@ public class Rectangle extends Shape {
         return "A Rectangle:" + "\twidth = " + getWidth() + "\tlength = " + this.getLength();
     }
 
-    @Override
     public void howToColor() {
         System.out.println("Color all four sides");
     }

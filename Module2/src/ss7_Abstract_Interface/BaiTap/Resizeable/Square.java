@@ -5,6 +5,11 @@ public class Square extends Shape{
     public Square() {
     }
 
+    @Override
+    public double getArea() {
+        return side * side;
+    }
+
     public Square(double side) {
         this.side = side;
     }

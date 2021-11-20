@@ -3,6 +3,7 @@ package ss7_Abstract_Interface.BaiTap.Colorable;
 
 public class Square extends Rectangle {
     public Square() {
+
     }
 
     public Square(double side) {
