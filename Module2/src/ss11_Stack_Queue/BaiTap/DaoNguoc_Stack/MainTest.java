@@ -10,8 +10,7 @@ public class MainTest {
             stack.push(arrayInteger[i]);
         }
         for(int i = 0; i < size; i++) {
-            arrayInteger[i] = stack.peek();
-            stack.pop();
+            arrayInteger[i] = stack.pop();
         }
     }
     public static String reverseString(String arrayString) {
@@ -22,8 +21,7 @@ public class MainTest {
         }
         arrayString= "";
         for(int i = 0; i < size; i++) {
-            arrayString += stack.peek();
-            stack.pop();
+            arrayString += stack.pop();
         }
         return arrayString;
     }

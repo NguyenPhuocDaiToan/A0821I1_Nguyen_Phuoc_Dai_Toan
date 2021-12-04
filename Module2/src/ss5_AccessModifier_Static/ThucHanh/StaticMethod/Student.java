@@ -5,7 +5,7 @@ public class Student {
     private String name;
     private static String college = "BBDIT";
 
-    Student(int r, String n) {
+    public Student(int r, String n) {
         rollno = r;
         name = n;
     }

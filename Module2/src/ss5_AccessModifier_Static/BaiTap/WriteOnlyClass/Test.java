@@ -10,7 +10,7 @@ public class Test {
         name = scanner.nextLine();
         System.out.print("Nhập lớp: ");
         classes = scanner.nextLine();
-        Student student =  new Student();
+        Student student = new Student();
         student.setName(name);
         student.setClasses(classes);
         student.dislay();

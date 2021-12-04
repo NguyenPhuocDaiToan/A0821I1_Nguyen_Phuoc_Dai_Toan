@@ -3,7 +3,7 @@ package ss5_AccessModifier_Static.BaiTap.WriteOnlyClass;
 public class Student {
     private String name = "John";
     private String classes = "CO2";
-    Student(){}
+    public Student(){}
     public void setName(String name) {
         this.name = name;
     }
