@@ -10,7 +10,7 @@ public class Triangle {
         this.b = b;
         this.c = c;
 
-        if(a + b <= c || b + c <= a || c + a <= b)
+        if(a + b <= c || b + c <= a || c + a <= b || a <= 0 || b <= 0 || c <= 0)
             throw new IllegalTriangleException("Not triangle");
     }
 }

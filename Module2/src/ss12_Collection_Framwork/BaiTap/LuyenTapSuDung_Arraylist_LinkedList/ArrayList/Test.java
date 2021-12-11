@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class Test {
     private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         displayMenu();
     }
@@ -95,5 +96,4 @@ public class Test {
         Product product = new Product(name, price);
         ProductService.save(product);
     }
-
 }

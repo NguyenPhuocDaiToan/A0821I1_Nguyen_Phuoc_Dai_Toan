@@ -1,5 +1,7 @@
 package ss5_AccessModifier_Static.BaiTap.WriteOnlyClass;
 
+import ss5_AccessModifier_Static.ThucHanh.StaticMethod.Student.*;
+
 import java.util.Scanner;
 
 public class Test {

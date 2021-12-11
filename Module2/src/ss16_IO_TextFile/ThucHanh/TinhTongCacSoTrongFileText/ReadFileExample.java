@@ -1,9 +1,6 @@
 package ss16_IO_TextFile.ThucHanh.TinhTongCacSoTrongFileText;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class ReadFileExample {
     public void readFileText(String filePath) {
@@ -28,9 +25,10 @@ public class ReadFileExample {
 
             // Hiển thị ra màn hình tổng các số nguyên trong file
             System.out.println("Tổng = " + sum);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             // TH file không tồn tại hoặc nội dung file có lỗi thì sẽ hiển thị thông báo lỗi.
-            System.err.println("Fie không tồn tại or nội dung có lỗi!");
+            System.err.println("Fie không tồn tại hoặc nội dung có lỗi!");
         }
     }
 }

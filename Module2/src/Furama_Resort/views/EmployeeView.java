@@ -1,5 +1,6 @@
 package Furama_Resort.views;
 
+import Furama_Resort.service.Impl.EmployeeServiceImpl;
 import Furama_Resort.utils.CommonUtil;
 
 public class EmployeeView {
@@ -18,5 +19,6 @@ public class EmployeeView {
                 System.out.println("Please re-enter choice valid from 1 - 4.");
             }
         } while (choice < 1 || choice > 4);
+
     }
 }
