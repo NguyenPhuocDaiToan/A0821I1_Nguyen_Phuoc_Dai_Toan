@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffff50b9-3e02-4eef-9761-4bab8dcb1caa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant$Path.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant$Regex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/CSVHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/data/genuineCSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/data/handedCSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/exception/NotFoundProductException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/GenuineProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/HandedProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/service/GenuineProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/service/HandedProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/view/ViewMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/common/AppContant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/common/CSVHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/data/genuineCSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/data/handedCSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/exception/NotFoundProductException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/GenuineProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/HandedProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/service/GenuineProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/service/HandedProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise_product/src/view/ViewMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module1" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/GenuineProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/HandleProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/ManagerProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Module2/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Module2/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="22MLBjRmGon4DxzB8NW5Onvd4RW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercise_vehicle" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Codegym\Module2\src\exercise_vehicle" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffff50b9-3e02-4eef-9761-4bab8dcb1caa" name="Default Changelist" comment="" />
+      <created>1639642377070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639642377070</updated>
+      <workItem from="1639642378158" duration="59000" />
+      <workItem from="1639642444216" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
