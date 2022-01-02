@@ -1,4 +1,5 @@
 create database QuanLyDiemThi;
+
 use QuanLyDiemThi;
 
 create table HocSinh(
@@ -19,6 +20,7 @@ create table BangDiem(
     MaMH varchar(20),
     DiemThi float,
     NgayKT date,
+    primary key(MaHS, MaMH),
     foreign key (MaHS) references HocSinh(MaHS),
     foreign key (MaMH) references MonHoc(MaMH)
 );
