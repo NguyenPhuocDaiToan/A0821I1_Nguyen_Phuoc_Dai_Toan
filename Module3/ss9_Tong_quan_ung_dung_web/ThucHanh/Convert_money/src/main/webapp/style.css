@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form_wraper {
+    width: 300px;
+    margin: 50px auto;
+    background-color: beige;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 1px #928e8e;
+    border-radius: 2px;
+}
+lable {
+    display: block;
+    padding: 4px 0;
+    font-size: 18px;
+}
+input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 4px;
+}
+#submit {
+    margin-top: 8px;
+    padding: 4px;
+    cursor: pointer;
+}

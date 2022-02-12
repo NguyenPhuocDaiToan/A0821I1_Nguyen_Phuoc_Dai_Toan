@@ -1,0 +1,41 @@
+.main {
+    width: 600px;
+    height: auto;
+    margin: 100px auto 0;
+    background-color: #dbce79;
+    border: 1px solid #000;
+}
+.heading {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+.back-to-home {
+    margin-left: 20px;
+    padding: 4px;
+}
+.back-to-home-link {
+    text-decoration: none;
+    color: #000;
+}
+form {
+    margin: 0;
+    padding: 20px;
+}
+legend {
+    font-weight: 600;
+    font-size: 22px;
+}
+table {
+    width: 100%;
+}
+tr {
+    height: 36px;
+    font-size: 18px;
+}
+.btn-submit-form {
+    cursor: pointer;
+    float: right;
+    padding: 4px;
+    font-size: 14px;
+}

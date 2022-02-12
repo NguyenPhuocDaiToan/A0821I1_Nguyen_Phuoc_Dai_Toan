@@ -1,0 +1,16 @@
+
+.input-search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.creat-product-link {
+    color: #000;
+}
+.creat-product-link:hover {
+    color: #fff;
+}
+.input-search {
+    min-width: 250px;
+}

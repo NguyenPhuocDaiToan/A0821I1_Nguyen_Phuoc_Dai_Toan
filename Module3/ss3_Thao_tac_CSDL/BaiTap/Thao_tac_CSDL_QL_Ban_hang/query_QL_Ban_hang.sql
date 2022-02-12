@@ -28,5 +28,5 @@ where customer.id not in
 select `order`.id, ngay_dat, sum(quantity * totalPrice) as `Gia hoa don` 
 from `order` join order_detail
 on `order`.id = order_detail.order_id
-group by `order`.id
+group by `order`.id;
 
