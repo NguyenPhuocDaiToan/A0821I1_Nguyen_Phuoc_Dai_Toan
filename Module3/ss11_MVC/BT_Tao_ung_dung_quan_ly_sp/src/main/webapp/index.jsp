@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: DELL
@@ -11,7 +12,7 @@
     <title>$Title$</title>
   </head>
   <body>
-      <c:redict url = "/products"></c:redict>
+      <c:redirect url = "/products"></c:redirect>
       <h1>Trang chủ Telephone</h1>
   </body>
 </html>

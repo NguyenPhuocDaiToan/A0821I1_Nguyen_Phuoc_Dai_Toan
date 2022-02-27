@@ -29,7 +29,7 @@
             <a href="/products?action=create" target="_blank" class="btn btn-info creat-product-link">Create new customer</a>
             <div>
                 <form action="/products?action=searchByName" method="post">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm theo tên" name="nameProduct" class="input-search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm theo tên" name="nameProduct" class="input-search" required>
                     <input type="submit" value="Tìm kiếm">
                 </form>
             </div>

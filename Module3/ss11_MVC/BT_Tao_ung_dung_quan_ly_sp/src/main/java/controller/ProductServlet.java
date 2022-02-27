@@ -2,7 +2,6 @@ package controller;
 
 import model.Product;
 import service.ProductService;
-import service.ProductServiceImpl;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -12,7 +11,7 @@ import java.util.List;
 
 @WebServlet(name = "ProductServlet", value = "/products")
 public class ProductServlet extends HttpServlet {
-    private ProductService productService = new ProductServiceImpl();
+    private ProductService productService = new ProductService();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");

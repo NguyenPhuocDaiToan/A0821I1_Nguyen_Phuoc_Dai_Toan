@@ -3,8 +3,8 @@ package model;
 public class Customer {
     private int id;
     private String name;
-    private  String email;
-    private  String address;
+    private String email;
+    private String address;
 
     public Customer() {
 
@@ -44,7 +44,7 @@ public class Customer {
         return address;
     }
 
-    public void setAddress(String addess) {
-        this.address = addess;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

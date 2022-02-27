@@ -1,11 +1,11 @@
 package model;
 
 public class Product {
-    int id;
-    String name;
-    double price;
-    String desc;
-    String manufacture;
+    private int id;
+    private String name;
+    private double price;
+    private String desc;
+    private String manufacture;
 
     public Product() {
 

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GiaiPhuongTrinhBacHai:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GiaiPhuongTrinhBacHai_jar</output-path>
+    <root id="archive" name="ss14_DependencyManagement_Packaging.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/BT_Dong_goi_thu_vien_giai_PTB2/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ss14_DependencyManagement_Packaging" />
+    </root>
+  </artifact>
+</component>
