@@ -2,48 +2,252 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffff50b9-3e02-4eef-9761-4bab8dcb1caa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant$Path.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant$Regex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/AppContant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/common/CSVHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/data/genuineCSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/data/handedCSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/exception/NotFoundProductException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/GenuineProduct.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/HandedProduct.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/service/GenuineProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/service/HandedProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/out/production/BaiTapLamThemTach/view/ViewMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/common/AppContant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/common/CSVHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/data/genuineCSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/data/handedCSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/exception/NotFoundProductException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/GenuineProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/HandedProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/service/GenuineProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/service/HandedProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_product/src/view/ViewMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/Furama_resort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/model/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/model/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/BookingView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/CustomerView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/EmployeeView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/FacilityView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/HomeView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/out/production/Furama_resort/view/PromotionView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/controller/employeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/data/employee.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/util/CSVHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/util/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/util/ConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/BookingView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/CustomerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/EmployeeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/FacilityView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/HomeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/src/view/PromotionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/.idea/ss11_MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/.idea/ss12_ss13_JDBC_Transaction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/configuration-cache/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/modules/users_manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/controller/FilterUTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/controller/UserServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/controller/UserServlet$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/classes/java/main/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/libs/users_manager-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/java/controller/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/java/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager/src/main/webapp/user/sortByName.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/.idea/artifacts/Calculator_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/src/BT_Dong_goi_thu_vien_giai_PTB2/GiaiPhuongTrinhBacHai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/src/TH_Dong_goi_thu_vien/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/src/TH_Dong_goi_thu_vien/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/ss14_DependencyManagement_Packaging/ss14_DependencyManagement_Packaging.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module1" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/GenuineProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/HandleProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/ManagerProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/BaiTap/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Module2/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Module2/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/CG-DN CaseStudy Furama Resort Module 2_v3.0_TrungDP.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/controllers/FuramaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Facility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/models/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/BookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/ContactService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/FacilityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/Impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/service/Impl/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/utils/CommonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/utils/ConstantUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/BookingView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/CustomerView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/EmployeeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/FacilityView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/HomeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/Furama_Resort/views/PromotionView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/exercise_products/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise_Case_study/exercise_products/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_Case_study/exercise_vehicle/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise_Case_study/exercise_vehicle/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThiThucHanh/src/data/bank_accounts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ThiThucHanh/src/data/bank_accounts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_BinaryFile_Serialization/ThucHanh/DocvaGhiFileSinhVienRaFileNhiPhan/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/classes/java/main/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/classes/java/main/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/classes/java/main/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/classes/java/main/service/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/libs/BT_Tao_ung_dung_quan_ly_sp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/libs/BT_Tao_ung_dung_quan_ly_sp-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/java/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/BT_Tao_ung_dung_quan_ly_sp/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/build/libs/TH_Ung_dung_quan_ly_khach_hang-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/build/libs/TH_Ung_dung_quan_ly_khach_hang-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/src/main/java/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/src/main/java/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss11_MVC/TH_Ung_dung_quan_ly_khach_hang/src/main/java/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/modules/user_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/controller/UserServlet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/controller/UserServlet$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/dao/UserDaoImpl/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/classes/java/main/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/resources/main/Data/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/java/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/java/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/java/dao/UserDaoImpl/UserDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/resources/Data/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/bootstrap4.6.0/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/user/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/user/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/user/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/user/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss12_JDBC/user_manager/src/main/webapp/user/sortByName.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/ss9_Tong_quan_ung_dung_web/ThucHanh/Tao_web_dang_nhap_hien_thi_loi_chao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/ss9_Tong_quan_ung_dung_web/ThucHanh/Tao_web_dang_nhap_hien_thi_loi_chao/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +268,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercise_vehicle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module3/ss12_ss13_JDBC_Transaction/users_manager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -84,6 +288,9 @@
       <updated>1639642377070</updated>
       <workItem from="1639642378158" duration="59000" />
       <workItem from="1639642444216" duration="9000" />
+      <workItem from="1645523231381" duration="24000" />
+      <workItem from="1645523272092" duration="3397000" />
+      <workItem from="1645584277922" duration="18000" />
     </task>
     <servers />
   </component>

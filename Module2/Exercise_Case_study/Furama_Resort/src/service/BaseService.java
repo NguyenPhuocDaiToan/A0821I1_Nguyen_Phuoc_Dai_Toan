@@ -2,8 +2,8 @@ package service;
 
 import java.util.List;
 
-public interface Base<E> {
+public interface BaseService<E> {
     List<E> getAll();
-    void save();
-    boolean delete();
+    void save(E e);
+    boolean delete(int id);
 }

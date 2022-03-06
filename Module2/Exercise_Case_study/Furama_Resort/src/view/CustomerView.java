@@ -1,2 +1,7 @@
-package view;public class CustomerView {
+package view;
+
+public class CustomerView {
+    public static void customerManager() {
+
+    }
 }

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --height_nav: 60px;
+    --height_footer: 46px;
+    --height_content: calc(100% - var(--height_nav) - var(--height_footer));
+    --primary-color: #297a98;
+}
+nav {
+    background: var(--primary-color);
+    height: var(--height_nav);
+}
+footer {
+    background: var(--primary-color);
+    height: var(--height_footer);
+}
