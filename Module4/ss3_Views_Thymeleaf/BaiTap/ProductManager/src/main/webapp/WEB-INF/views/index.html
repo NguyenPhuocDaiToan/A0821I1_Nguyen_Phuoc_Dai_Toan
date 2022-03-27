@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 50px;
+        }
+        .btn {
+            text-decoration: none;
+            border: none;
+            padding: 8px 12px;
+            color: #fff;
+            background: #e94d4d;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            color: #000;
+            background: #e97676;
+        }
+        #header-title {
+            text-align: center;
+            font-weight: bold;
+            color: brown;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border: #000 1px solid;
+        }
+        td {
+            padding: 8px 12px;
+        }
+        tr, td {
+            margin: 10px 0;
+            border: #000 1px solid;
+        }
+        .action {
+            text-align: center;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header-title">Product Manager</h1>
+    <a href="/products/create" class="btn">Add new Product</a>
+    <h3 th:if="${success}" class="success">
+        <span th:text="${success}"></span>
+    </h3>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Manufacture</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="product, status : ${products}">
+                <td th:text="${status.count}"></td>
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.price}"></td>
+                <td th:text="${product.description}"></td>
+                <td th:text="${product.manufacture}"></td>
+                <td class="action">
+                    <a th:href="@{/products/{id}/edit(id=${product.id})}" class="btn">Edit</a>
+                    <a th:href="@{/products/{id}/delete(id=${product.id})}" class="btn">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
