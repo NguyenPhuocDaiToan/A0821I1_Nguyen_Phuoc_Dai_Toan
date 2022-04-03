@@ -1,0 +1,20 @@
+model/Customer.java
+ model.Customer
+configuration/AppInit.java
+ configuration.AppInit
+service/IGeneralService.java
+ service.IGeneralService
+repository/CustomerRepository.java
+ repository.CustomerRepository
+service/CustomerService.java
+ service.CustomerService
+configuration/AppConfig.java
+ configuration.AppConfig
+repository/ICustomerRepository.java
+ repository.ICustomerRepository
+repository/IGeneralRepository.java
+ repository.IGeneralRepository
+service/ICustomerService.java
+ service.ICustomerService
+controller/CustomerController.java
+ controller.CustomerController
