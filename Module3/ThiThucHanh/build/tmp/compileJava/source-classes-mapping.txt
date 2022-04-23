@@ -2,17 +2,17 @@ controller/FilterUTF8.java
  controller.FilterUTF8
 dao/ConnectDatabase.java
  dao.ConnectDatabase
-dao/CategoryDAO.java
- dao.CategoryDAO
 controller/ProductServlet.java
  controller.ProductServlet
+dao/ProductDAO.java
+ dao.ProductDAO
 model/Category.java
  model.Category
 model/Product.java
  model.Product
-service/CategoryService.java
- service.CategoryService
-dao/ProductDAO.java
- dao.ProductDAO
 service/ProductService.java
  service.ProductService
+service/CategoryService.java
+ service.CategoryService
+dao/CategoryDAO.java
+ dao.CategoryDAO

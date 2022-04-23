@@ -38,7 +38,9 @@ public class UserDao {
     protected Connection getConnection() {
         Connection connection = null;
         try {
+            // Nạp trình điều khiển
             Class.forName("com.mysql.jdbc.Driver");
+            // Tạo đối tượng kết nối
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
