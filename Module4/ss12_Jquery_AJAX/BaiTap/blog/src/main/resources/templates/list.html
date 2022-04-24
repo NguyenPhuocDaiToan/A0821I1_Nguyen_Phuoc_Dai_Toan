@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Blogs</h1>
+
+    <form method="get" action="/search" id="searchForm">
+        <input type="text" name="search_key" th:value="${search_key}" id="search">
+        <button type="submit">Search</button>
+    </form>
+    <p id="result"></p>
+
+    <h1>List Blogs</h1>
+    <a href="/create">Create</a>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Date creat</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="blog: ${blogs}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.title}"></td>
+            <td th:text="${blog.content}"></td>
+            <td th:text="${blog.createdOn}"></td>
+            <td th:text="${blog.category.name}"></td>
+            <td>
+                <a th:href="@{/view/__${blog.id}__ }">View</a>
+                <a th:href="@{/edit/__${blog.id}__ }">Edit</a>
+                <a th:href="@{/delete/__${blog.id}__ }">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <a th:href="@{'search'(page=${blogs.number - 1}, search_key = ${search_key})}" th:if="${blogs.hasPrevious()}">Previous</a>
+        <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+        <a th:href="@{'search'(page=${blogs.number + 1}, search_key = ${search_key})}" th:if="${blogs.hasNext()}">Next</a>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('#searchForm').submit(function (e) {
+            let search = {};
+            search["blogName"] = $('#search').val();
+            $.ajax({
+                header: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "GET",
+                data: JSON.stringify(search),
+                url: "/search",
+                success: function (blogs) {
+                    console.log("hello");
+                    let respContent = "";
+                    respContent += "<span class='success'>Blogs search: ";
+                    for(let item of blogs) {
+                        respContent += "[";
+                        respContent += item.title + " : ";
+                        respContent += item.content + " : ";
+                        respContent += item.createdOn + "]</span>";
+                        respContent += "<br/>";
+                    }
+                    $("#result").html(respContent);
+                }
+            });
+            e.preventDefault();
+        });
+    });
+</script>
+</html>
