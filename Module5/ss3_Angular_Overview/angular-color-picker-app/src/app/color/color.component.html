@@ -1,0 +1,6 @@
+<div [ngStyle]="{backgroundColor: color}">
+  Color:
+  <select [(ngModel)]="color">
+    <option *ngFor="let c of colors" value="{{c}}">{{c}}</option>
+  </select>
+</div>
