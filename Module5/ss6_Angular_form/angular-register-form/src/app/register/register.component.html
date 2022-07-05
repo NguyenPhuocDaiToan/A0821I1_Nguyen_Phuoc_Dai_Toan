@@ -1,0 +1,72 @@
+<div class="container">
+  <h2 class="mt-4 mb-4 text-danger">Register User</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="submit()">
+    <div class="input-wrapper">
+      <span class="title-field">Email:</span>
+      <input type="text" formControlName="email">
+      <p *ngIf="email.invalid && email.touched" class="text-danger">
+        Email Invalid
+      </p>
+    </div>
+
+    <div formGroupName="pwGroup">
+      <div class="input-wrapper">
+        <span class="title-field">Password:</span>
+        <input type="text" formControlName="password">
+        <p *ngIf="password.invalid && password.touched" class="text-danger">
+          Password minimum 6 characters
+        </p>
+      </div>
+
+      <div class="input-wrapper">
+        <span class="title-field">Confirm Password:</span>
+        <input type="text" formControlName="confirmPassword">
+        <p *ngIf="registerForm.hasError('passwordNotMatch',['pwGroup'])
+            && confirmPassword.touched" class="text-danger">
+          Confirm Password Invalid
+        </p>
+      </div>
+
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-field">Country:</span>
+      <input type="text" formControlName="country">
+      <p *ngIf="country.invalid && country.touched" class="text-danger">
+        Country Required
+      </p>
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-field">Age:</span>
+      <input type="text" formControlName="age">
+      <p *ngIf="age.invalid && age.touched" class="text-danger">
+        Age must be greater or equal 18
+      </p>
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-field">Gender:</span>
+      <input type="radio" name="gender" value="true" formControlName="gender"> Male
+      <input type="radio" name="gender" value="false" formControlName="gender"> Female
+      <p *ngIf="gender.invalid && gender.touched" class="text-danger">
+        Gender must be choose
+      </p>
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-field">Phone:</span>
+      <input type="text" formControlName="phone">
+      <p *ngIf="phone.invalid && phone.touched" class="text-danger">
+        Phone must be begin +84 and include 9 or 10 digits
+      </p>
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-field"></span>
+      <button type="submit" class="btn btn-danger mt-2">Submit</button>
+    </div>
+
+  </form>
+</div>
+<br>

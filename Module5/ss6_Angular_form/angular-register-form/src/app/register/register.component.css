@@ -1,0 +1,9 @@
+.input-wrapper {
+  margin: 8px 0;
+}
+.title-field {
+  margin-right: 4px;
+  font-weight: bold;
+  min-width: 200px;
+  display: inline-block;
+}

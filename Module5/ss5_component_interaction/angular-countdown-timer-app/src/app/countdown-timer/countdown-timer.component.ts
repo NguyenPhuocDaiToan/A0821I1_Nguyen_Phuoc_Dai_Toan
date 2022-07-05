@@ -10,7 +10,7 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
   message = '';
   remainingTime: number;
   @Input()
-  seconds = 11;
+  seconds = 60;
   @Output()
   finish = new EventEmitter<boolean>();
   private intervalId = 0;
@@ -18,9 +18,9 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
   ngOnChanges(changes: SimpleChanges) {
     if ('seconds' in changes) {
       let v = changes.seconds.currentValue;
-      v = typeof v === 'undefined' ? 11 : v;
+      v = typeof v === 'undefined' ? 60 : v;
       const vFixed = Number(v);
-      this.seconds = Number.isNaN(vFixed) ? 11 : vFixed;
+      this.seconds = Number.isNaN(vFixed) ? 60 : vFixed;
     }
   }
 
