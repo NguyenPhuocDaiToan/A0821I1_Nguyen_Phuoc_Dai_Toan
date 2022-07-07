@@ -1,0 +1,20 @@
+<div class="container">
+  <a class="text-center text-danger fw-bold m-4 d-block text-decoration-none fs-1" routerLink="/product/list">Create Product</a>
+  <form [formGroup]="createForm" (ngSubmit)="save()" class="form-create">
+    <div class="input-wrapper">
+      <span class="title-property">Name</span>
+      <input type="text" formControlName="name"  class="field-input">
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-property">Price</span>
+      <input type="text" formControlName="price"  class="field-input">
+    </div>
+
+    <div class="input-wrapper">
+      <span class="title-property">Description</span>
+      <input type="text" formControlName="description"  class="field-input">
+    </div>
+    <button type="submit" class="btn btn-success btn-create">Create</button>
+  </form>
+</div>

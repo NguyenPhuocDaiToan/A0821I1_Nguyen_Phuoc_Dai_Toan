@@ -1,0 +1,19 @@
+<div class="container">
+  <a class="text-danger text-center m-4 d-block text-decoration-none fs-2" routerLink="/list">Category list</a>
+  <button routerLink="/category/create" class="btn btn-success mt-4 mb-4">Create category</button>
+  <table class="table-striped table-bordered w-100">
+    <tr class="bg-success text-center">
+      <th>STT</th>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let category of categories; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{category.name}}</td>
+      <td class="text-center">
+        <button class="btn btn-info m-lg-2" [routerLink]="['/category/edit', category.id]">Edit</button>
+        <button class="btn btn-danger" [routerLink]="['/category/delete', category.id]">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
