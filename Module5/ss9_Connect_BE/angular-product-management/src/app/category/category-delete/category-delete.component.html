@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="fw-bold text-danger">Category Delete</h1>
+  <div>
+    <span class="property-text">ID: </span>
+    <span>{{category.id}}</span>
+  </div>
+  <div>
+    <span class="property-text">Name: </span>
+    <span>{{category.name}}</span>
+  </div>
+
+  <button routerLink="/category/list" class="btn btn-success">Cancel</button>
+  <button (click)="delete()" class="btn btn-danger">Delete</button>
+</div>

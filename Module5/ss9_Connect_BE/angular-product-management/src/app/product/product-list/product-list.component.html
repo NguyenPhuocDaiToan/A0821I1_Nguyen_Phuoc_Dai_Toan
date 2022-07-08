@@ -1,0 +1,24 @@
+<div class="container">
+  <a class="text-danger text-center m-4 d-block text-decoration-none fs-2" routerLink="/product/list">Product list</a>
+  <button routerLink="/product/create" class="btn btn-success mt-4 mb-4">Create product</button>
+  <table class="table-striped table-bordered w-100">
+    <tr class="bg-success text-center">
+      <th>STT</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let product of products; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.description}}</td>
+      <td class="text-center">
+        <button class="btn btn-success" [routerLink]="['/product/detail', product.id]">Detail</button>
+        <button class="btn btn-info m-lg-2" [routerLink]="['/product/edit', product.id]">Edit</button>
+        <button class="btn btn-danger" [routerLink]="['/product/delete', product.id]">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

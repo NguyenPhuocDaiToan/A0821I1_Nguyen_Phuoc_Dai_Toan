@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="fw-bold text-danger">Product Delete</h1>
+  <div>
+    <span class="property-text">ID: </span>
+    <span>{{product.id}}</span>
+  </div>
+  <div>
+    <span class="property-text">Name: </span>
+    <span>{{product.name}}</span>
+  </div>
+  <div>
+    <span class="property-text">Price: </span>
+    <span>{{product.price}}</span>
+  </div>
+  <div>
+    <span class="property-text">Description: </span>
+    <span>{{product.description}}</span>
+  </div>
+
+  <button routerLink="/product/list" class="btn btn-success">Cancel</button>
+  <button (click)="delete()" class="btn btn-danger">Delete</button>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <a class="text-center text-danger fw-bold m-4 d-block text-decoration-none fs-1" routerLink="/category/list">Edit categpry</a>
+  <form [formGroup]="editForm" (ngSubmit)="update()" class="form-edit">
+    <div class="input-wrapper">
+      <span class="title-property">Name</span>
+      <input type="text" formControlName="name"  class="field-input">
+    </div>
+    <button type="submit" class="btn btn-success btn-save">Save</button>
+  </form>
+</div>
