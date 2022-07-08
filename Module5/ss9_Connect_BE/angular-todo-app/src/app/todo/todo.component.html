@@ -1,0 +1,16 @@
+<h2 class="text-center">
+  Todo App
+</h2>
+
+<div class="col-md-8 offset-md-2">
+  <input type="text" [formControl]="content">
+  <button type="submit" class="btn btn-success m-lg-2" (click)="create()">Create</button>
+
+  <div *ngFor="let todo of todos; index as i">
+    <p class="fw-bold">Mission {{i + 1}}: {{todo.content}}</p>
+    <p>Action:
+      <button class="btn btn-danger" (click)="delete(todo.id)">Delete</button>
+<!--      <button class="btn btn-warning m-lg-2" (click)="edit(todo.id)">Edit</button>-->
+    </p>
+  </div>
+</div>
