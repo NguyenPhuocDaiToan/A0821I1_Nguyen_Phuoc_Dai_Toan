@@ -12,18 +12,18 @@ export class CategoryEditComponent implements OnInit {
   editForm: FormGroup;
 
   constructor(private categoryService: CategoryService, private router : Router, private activatedRoute: ActivatedRoute) {
-
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       const id = parseInt(paramMap.get('id'));
       this.categoryService.findById(id).subscribe(category => {
         this.editForm = new FormGroup({
           id: new FormControl(category.id),
-          name: new FormControl(category.name),
+          name: new FormControl(category.name)
         });
-    })});
+      })});
   }
 
   ngOnInit(): void {
+
   }
 
   update() {

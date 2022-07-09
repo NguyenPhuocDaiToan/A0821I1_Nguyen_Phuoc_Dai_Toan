@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {CategoryService} from "../../service/category.service";
 import {Router} from "@angular/router";
+import {Category} from "../../model/category";
 
 
 @Component({
@@ -11,16 +12,18 @@ import {Router} from "@angular/router";
 })
 export class CategoryCreateComponent implements OnInit {
   createForm: FormGroup;
+
   constructor(private categoryService: CategoryService, private router: Router) { }
 
   ngOnInit(): void {
     this.createForm = new FormGroup({
+      id: new FormControl(this.categoryService.generateIdAuto()),
       name: new FormControl()
     })
   }
 
   save() {
-   this.categoryService.save(this.createForm.value);
+   this.categoryService.save(this.createForm.value).subscribe();
    this.router.navigateByUrl('/category/list');
   }
 }

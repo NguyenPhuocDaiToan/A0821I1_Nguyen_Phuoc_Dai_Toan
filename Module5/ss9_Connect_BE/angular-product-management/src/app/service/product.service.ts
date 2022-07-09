@@ -2,12 +2,19 @@ import { Injectable } from '@angular/core';
 import {Product} from "../model/product";
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
-import {Observable} from "rxjs";
+import {Observable, Subject} from "rxjs";
+import {tap} from "rxjs/operators";
 const API_URL = `${environment.apiUrl}`;
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+
+  private _refreshNeeded = new Subject<void>();
+
+  get refreshNeeded() {
+    return this._refreshNeeded;
+  }
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +23,11 @@ export class ProductService {
   }
 
   save(product : Product): Observable<Product> {
-    return this.http.post<Product>(API_URL + '/products', product);
+    return this.http.post<Product>(API_URL + '/products', product).pipe(
+      tap(() => {
+        this._refreshNeeded.next();
+      })
+    );
   }
 
   update(product: Product): Observable<Product> {
