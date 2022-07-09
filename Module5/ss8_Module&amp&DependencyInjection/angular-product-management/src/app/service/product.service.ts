@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Product} from "../model/product";
+import {Product} from '../model/product';
 
 @Injectable({
   providedIn: 'root'
@@ -33,27 +33,26 @@ export class ProductService {
   }];
   constructor() { }
 
-  getAll() : Product[] {
+  getAll(): Product[] {
     return this.products;
   }
 
-  save(product : Product) {
-    if(product.id === undefined) {
+  save(product: Product) {
+    if (product.id === undefined) {
       product.id = this.products[this.products.length - 1].id + 1;
       this.products.push(product);
-    }
-    else {
-      let index = this.products.findIndex(p => p.id == product.id);
+    } else {
+      const index = this.products.findIndex(p => p.id === product.id);
       this.products[index] = product;
     }
   }
 
-  findById(id : number) {
-    return this.products.find(p => p.id == id);
+  findById(id: number) {
+    return this.products.find(p => p.id === id);
   }
 
-  delete(id : number) {
-    const index = this.products.findIndex(p => p.id == id);
+  delete(id: number) {
+    const index = this.products.findIndex(p => p.id === id);
     this.products.splice(index, 1);
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Category} from "../../model/category";
-import {CategoryService} from "../../service/category.service";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {Category} from '../../model/category';
+import {CategoryService} from '../../service/category.service';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 
 @Component({
   selector: 'app-category-delete',
@@ -13,7 +13,7 @@ export class CategoryDeleteComponent implements OnInit {
 
   constructor(private categoryService: CategoryService, private router: Router, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-      const id = parseInt(paramMap.get('id'));
+      const id = Number(paramMap.get('id'));
       this.categoryService.findById(id).subscribe(category => this.category = category);
     });
   }

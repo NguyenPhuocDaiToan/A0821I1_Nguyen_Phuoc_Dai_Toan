@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {ProductService} from "../../service/product.service";
-import {Router} from "@angular/router";
+import {FormControl, FormGroup} from '@angular/forms';
+import {ProductService} from '../../service/product.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-create',
@@ -11,7 +11,7 @@ import {Router} from "@angular/router";
 export class ProductCreateComponent implements OnInit {
   createForm: FormGroup;
 
-  constructor(private productService : ProductService, private router : Router) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     this.createForm = new FormGroup({

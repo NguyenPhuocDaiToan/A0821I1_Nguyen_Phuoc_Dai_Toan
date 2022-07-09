@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Category} from "../../model/category";
-import {CategoryService} from "../../service/category.service";
+import {Category} from '../../model/category';
+import {CategoryService} from '../../service/category.service';
 
 @Component({
   selector: 'app-category-list',
@@ -14,7 +14,7 @@ export class CategoryListComponent implements OnInit {
   ngOnInit(): void {
     this.categoryService.refreshNeeded.subscribe(() => {
       this.getAll();
-    })
+    });
     this.getAll();
   }
 

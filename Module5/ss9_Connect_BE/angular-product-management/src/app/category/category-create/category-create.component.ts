@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {CategoryService} from "../../service/category.service";
-import {Router} from "@angular/router";
-import {Category} from "../../model/category";
+import {FormControl, FormGroup} from '@angular/forms';
+import {CategoryService} from '../../service/category.service';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -19,7 +18,7 @@ export class CategoryCreateComponent implements OnInit {
     this.createForm = new FormGroup({
       id: new FormControl(this.categoryService.generateIdAuto()),
       name: new FormControl()
-    })
+    });
   }
 
   save() {

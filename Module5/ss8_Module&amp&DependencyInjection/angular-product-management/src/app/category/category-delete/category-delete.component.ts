@@ -12,7 +12,7 @@ export class CategoryDeleteComponent implements OnInit {
   category: Category;
   constructor(private categoryService: CategoryService, private router: Router, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-      const id = parseInt(paramMap.get('id'));
+      const id = Number(paramMap.get('id'));
       this.category = this.categoryService.findById(id);
     });
   }

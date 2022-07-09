@@ -7,6 +7,10 @@ import { ImageCardComponent } from './image-card/image-card.component';
 
 @NgModule({
   declarations: [ImageGalleryComponent, ImageCardComponent],
+  exports: [
+    ImageGalleryComponent,
+    ImageCardComponent
+  ],
   imports: [
     CommonModule
   ]

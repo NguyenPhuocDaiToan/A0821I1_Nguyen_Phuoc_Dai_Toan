@@ -8,7 +8,7 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [

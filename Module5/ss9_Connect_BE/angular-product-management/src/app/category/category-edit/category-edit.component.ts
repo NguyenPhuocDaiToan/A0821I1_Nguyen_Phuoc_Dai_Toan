@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {CategoryService} from "../../service/category.service";
-import {ActivatedRoute, ParamMap, Route, Router} from "@angular/router";
+import {FormControl, FormGroup} from '@angular/forms';
+import {CategoryService} from '../../service/category.service';
+import {ActivatedRoute, ParamMap, Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-category-edit',
@@ -11,7 +11,7 @@ import {ActivatedRoute, ParamMap, Route, Router} from "@angular/router";
 export class CategoryEditComponent implements OnInit {
   editForm: FormGroup;
 
-  constructor(private categoryService: CategoryService, private router : Router, private activatedRoute: ActivatedRoute) {
+  constructor(private categoryService: CategoryService, private router: Router, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       const id = parseInt(paramMap.get('id'));
       this.categoryService.findById(id).subscribe(category => {
@@ -19,7 +19,7 @@ export class CategoryEditComponent implements OnInit {
           id: new FormControl(category.id),
           name: new FormControl(category.name)
         });
-      })});
+      });});
   }
 
   ngOnInit(): void {
