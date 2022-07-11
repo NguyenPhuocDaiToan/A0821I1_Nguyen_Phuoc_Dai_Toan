@@ -1,0 +1,104 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Sale - Marketing"
+    },
+    {
+      "id": 2,
+      "name": "Hành chính"
+    },
+    {
+      "id": 3,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 4,
+      "name": "Quản lý"
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "name": "Lễ tân"
+    },
+    {
+      "id": 2,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 3,
+      "name": "Chuyên viên"
+    },
+    {
+      "id": 4,
+      "name": "Giám sát"
+    },
+    {
+      "id": 5,
+      "name": "Quản lý"
+    }
+  ],
+  "education_degrees": [
+    {
+      "id": 1,
+      "name": "Trung cấp"
+    },
+    {
+      "id": 2,
+      "name": "Cao đẳng"
+    },
+    {
+      "id": 3,
+      "name": "Đại học"
+    },
+    {
+      "id": 4,
+      "name": "Sau đại học"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Nguyễn Phước Đại Toàn",
+      "birthday": "2002/10/10",
+      "identity_card": "123456789",
+      "phone": "0901234567",
+      "email": "daitoan2000@gmail.com",
+      "salary": 2000,
+      "department": {
+        "id": 1,
+        "name": "Sale - Marketing"
+      },
+      "position": {
+        "id": 1,
+        "name": "Lễ tân"
+      },
+      "education_degree": {
+        "id": 1,
+        "name": "Trung cấp"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Toàn",
+      "birthday": "2002/10/10",
+      "identity_card": "123456789",
+      "phone": "0901234567",
+      "email": "daitoan2000@gmail.com",
+      "salary": 3000,
+      "department": {
+        "id": 1,
+        "name": "Sale - Marketing"
+      },
+      "position": {
+        "id": 1,
+        "name": "Lễ tân"
+      },
+      "education_degree": {
+        "id": 1,
+        "name": "Trung cấp"
+      }
+    }
+  ]
+}

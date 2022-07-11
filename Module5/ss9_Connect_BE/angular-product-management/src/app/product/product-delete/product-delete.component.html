@@ -16,6 +16,10 @@
     <span class="property-text">Description: </span>
     <span>{{product.description}}</span>
   </div>
+  <div>
+    <span class="property-text">Category: </span>
+    <span>{{product.category.name}}</span>
+  </div>
 
   <button routerLink="/product/list" class="btn btn-success">Cancel</button>
   <button (click)="delete()" class="btn btn-danger">Delete</button>

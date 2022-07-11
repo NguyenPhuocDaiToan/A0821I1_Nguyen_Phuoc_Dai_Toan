@@ -15,6 +15,13 @@
       <span class="title-property">Description</span>
       <input type="text" formControlName="description"  class="field-input">
     </div>
+
+    <div class="input-wrapper">
+      <span class="title-property">Category</span>
+      <select formControlName="category" [compareWith]="compareProduct" class="form-select">
+        <option *ngFor="let category of categories" [ngValue]="category">{{category.name}}</option>
+      </select>
+    </div>
     <button type="submit" class="btn btn-success btn-save">Save</button>
   </form>
 </div>

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {Category} from "../model/category";
-import {HttpClient} from "@angular/common/http";
-import {environment} from "../../environments/environment";
-import {Observable, Subject} from "rxjs";
-import {tap} from "rxjs/operators";
+import {Category} from '../model/category';
+import {HttpClient} from '@angular/common/http';
+import {environment} from '../../environments/environment';
+import {Observable, Subject} from 'rxjs';
+import {tap} from 'rxjs/operators';
 
 const API_URL = `${environment.apiUrl}`;
 
@@ -20,11 +20,12 @@ export class CategoryService {
   }
 
   getAll(): Observable<Category[]> {
-    return this.http.get<Category[]>(API_URL + '/categories').pipe(
-      tap(() => {
-        this.refreshNeeded.next();
-      })
-    );
+    return this.http.get<Category[]>(API_URL + '/categories');
+  // .pipe(
+  //     tap(() => {
+  //       this.refreshNeeded.next();
+  //     })
+  //   );
   }
 
   save(category: Category): Observable<Category> {
@@ -47,7 +48,7 @@ export class CategoryService {
     let id: number;
     this.getAll().subscribe(categories => {
       id = parseInt(String(categories[categories.length - 1].id)) + 1;
-    })
+    });
     return id;
   }
 }

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {ProductService} from '../../service/product.service';
 import {Router} from '@angular/router';
+import {Category} from '../../model/category';
+import {CategoryService} from '../../service/category.service';
+import {Product} from '../../model/product';
 
 @Component({
   selector: 'app-product-create',
@@ -10,15 +13,19 @@ import {Router} from '@angular/router';
 })
 export class ProductCreateComponent implements OnInit {
   createForm: FormGroup;
+  categories: Category[];
 
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private categoryService: CategoryService, private router: Router) { }
 
   ngOnInit(): void {
     this.createForm = new FormGroup({
+      id: new FormControl(''),
       name: new FormControl(''),
       price: new FormControl(''),
-      description: new FormControl('')
+      description: new FormControl(''),
+      category: new FormControl(null)
     });
+    this.categoryService.getAll().subscribe(categories => this.categories = categories);
   }
 
   save() {

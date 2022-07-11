@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Telephone"
+    },
+    {
+      "id": 3,
+      "name": "Television"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop1",
+      "price": 1000,
+      "description": "Laptop1",
+      "category": {
+        "id": 1,
+        "name": "Laptop"
+      }
+    },
+    {
+      "id": 2,
+      "name": "123",
+      "price": "123",
+      "description": "123",
+      "category": {
+        "id": 2,
+        "name": "Telephone"
+      }
+    }
+  ]
+}
