@@ -1,1 +1,103 @@
-<p>employee-create works!</p>
+<div class="p-5">
+  <a class="text-danger text-center d-block text-decoration-none fw-bold fs-1" routerLink="/employees">Create Employee</a>
+  <form [formGroup]="createForm" (ngSubmit)="save()">
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Tên:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Giới tính:</span>
+      <div class="col-10">
+        <select formControlName="gender" class="form-select">
+          <option [ngValue]="null" disabled selected>Vui lòng chọn giới tính</option>
+          <option [ngValue]="true">Nam</option>
+          <option [ngValue]="false">Nữ</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Ngày sinh:</span>
+      <div class="col-10">
+        <input type="date" class="form-control" formControlName="birthday">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">CMND/CCCD:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="identity_card">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Số điện thoại:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="phone">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Email:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="email">
+      </div>
+    </div>
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Địa chỉ:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="address">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Lương:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="salary">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <span class="col-2 fw-bold">Trình độ:</span>
+      <div class="col-10">
+        <select formControlName="education_degree" class="form-select">
+          <option [ngValue]="null" disabled selected>Chọn trình độ học vấn</option>
+          <option *ngFor="let edu of education_degrees" [ngValue]="edu">
+            {{edu.name}}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <span class="col-2 fw-bold">Bộ phận:</span>
+      <div class="col-10">
+        <select formControlName="department" class="form-select">
+          <option [ngValue]="null" disabled selected>Chọn bộ phận</option>
+          <option *ngFor="let d of departments" [ngValue]="d">
+            {{d.name}}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <span class="col-2 fw-bold">Vị trí:</span>
+      <div class="col-10">
+        <select formControlName="position" class="form-select">
+          <option [ngValue]="null" disabled selected>Chọn vị trí</option>
+          <option *ngFor="let p of positions" [ngValue]="p">
+            {{p.name}}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-end justify-content-end">
+      <button type="submit" class="btn btn-success m-5">Save</button>
+    </div>
+  </form>
+</div>

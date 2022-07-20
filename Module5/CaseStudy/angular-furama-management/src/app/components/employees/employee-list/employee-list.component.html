@@ -1,16 +1,17 @@
 <div class="d-flex justify-content-between">
   <h1>Danh sách nhân viên</h1>
   <div class="d-flex">
-    <input type="text" class="form-control mx-3" placeholder="Tìm kiến theo tên" style="width: 400px">
-    <button class="btn btn-outline-success">Search</button>
+    <input type="text" class="form-control mx-3" placeholder="Tìm kiến theo tên" style="width: 400px"  [(ngModel)]="searchText">
+    <button class="btn btn-outline-success" (click)="search()">Search</button>
   </div>
 </div>
 <div>
-  <button class="btn btn-success">Create</button>
+  <button class="btn btn-success my-4" routerLink="/employees/create">Create</button>
   <table class="table table-striped">
     <tr>
       <th>STT</th>
       <th>Tên</th>
+      <th>Giới tính</th>
       <th>CMND</th>
       <th>Số điện thoại</th>
       <th>Email</th>
@@ -18,16 +19,19 @@
       <th>Vị trí</th>
       <th>Action</th>
     </tr>
+
     <tr *ngFor="let employee of employees; index as i">
       <td>{{i + 1}}</td>
       <td>{{employee.name}}</td>
+      <td *ngIf="employee.gender">Nam</td>
+      <td *ngIf="!employee.gender">Nữ</td>
       <td>{{employee.identity_card}}</td>
       <td>{{employee.phone}}</td>
       <td>{{employee.email}}</td>
       <td>{{employee.department.name}}</td>
       <td>{{employee.position.name}}</td>
       <td>
-        <button class="btn btn-outline-warning">Detail</button>
+        <button class="btn btn-outline-warning" [routerLink]="['/employees/detail', employee.id]">Detail</button>
       </td>
     </tr>
   </table>

@@ -1,0 +1,78 @@
+<div class="p-5">
+  <a class="text-danger text-center d-block text-decoration-none fw-bold fs-1" routerLink="/facilities">
+    <span *ngIf="type === 'house'">Detail House</span>
+    <span *ngIf="type === 'villa'">Detail Villa</span>
+    <span *ngIf="type === 'room'">Detail Room</span>
+  </a>
+  <button routerLink="/facilities" class="btn btn-success my-4">Back</button>
+
+  <div class="row">
+    <span class="col-4">Tên dịch vụ</span>
+    <span class="col-8">{{facility.name}}</span>
+  </div>
+
+  <div class="row">
+    <span class="col-4">Diện tích sử dụng</span>
+    <span class="col-8">{{facility.area}}</span>
+  </div>
+
+  <div class="row">
+    <span class="col-4">Giá tiền</span>
+    <span class="col-8">{{facility.cost}}</span>
+  </div>
+
+  <div class="row">
+    <span class="col-4">Số người tối đa</span>
+    <span class="col-8">{{facility.max_people}}</span>
+  </div>
+
+  <div class="row">
+    <span class="col-4">Kiểu thuê</span>
+    <span class="col-8">{{facility.rent_type.name}}</span>
+  </div>
+
+  <div *ngIf="type === 'house' || type === 'villa'">
+    <div class="row">
+      <span class="col-4">Tiêu chuẩn</span>
+      <span class="col-8">{{facility.standard}}</span>
+    </div>
+
+    <div class="row">
+      <span class="col-4">Số tầng</span>
+      <span class="col-8">{{facility.number_floor}}</span>
+    </div>
+
+    <div class="row">
+      <span class="col-4">Mô tả</span>
+      <span class="col-8">{{facility.description}}</span>
+    </div>
+
+    <div *ngIf="type == 'villa'">
+      <div class="row">
+        <span class="col-4">Diện tích hồ bơi</span>
+        <span class="col-8">{{facility.area_pool}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="type === 'room'">
+    <div class="row">
+      <div class="col-4">Dịch vụ miễn phí</div>
+      <div class="col-8">
+        <span *ngFor="let fs of facility.free_services" style="margin-right: 20px">
+          {{fs.name}}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-4">
+
+    </div>
+    <div class="col-8">
+      <button type="button" class="btn btn-warning" (click)="navigateToEdit()">Edit</button>
+      <button type="button" class="btn btn-danger mx-3">Delete</button>
+    </div>
+  </div>
+</div>

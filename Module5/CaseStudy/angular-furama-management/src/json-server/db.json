@@ -60,45 +60,257 @@
   "employees": [
     {
       "id": 1,
-      "name": "Nguyễn Phước Đại Toàn",
-      "birthday": "2002/10/10",
+      "name": "123456 hellonew ",
+      "gender": true,
+      "birthday": "2022-07-08",
       "identity_card": "123456789",
-      "phone": "0901234567",
-      "email": "daitoan2000@gmail.com",
-      "salary": 2000,
+      "phone": "1234567890",
+      "email": "nguyen2000@gmail.com",
+      "salary": "2200",
+      "address": "Đà Nẵng",
+      "education_degree": {
+        "id": 4,
+        "name": "Sau đại học"
+      },
       "department": {
-        "id": 1,
-        "name": "Sale - Marketing"
+        "id": 4,
+        "name": "Quản lý"
       },
       "position": {
-        "id": 1,
-        "name": "Lễ tân"
-      },
-      "education_degree": {
-        "id": 1,
-        "name": "Trung cấp"
+        "id": 5,
+        "name": "Quản lý"
       }
     },
     {
       "id": 2,
-      "name": "Nguyễn Toàn",
-      "birthday": "2002/10/10",
+      "name": "Đại Toàn",
+      "gender": true,
+      "birthday": "2022-07-11",
       "identity_card": "123456789",
-      "phone": "0901234567",
+      "phone": "1234567890",
       "email": "daitoan2000@gmail.com",
-      "salary": 3000,
+      "address": "Cần Thơ",
+      "salary": "2500",
+      "education_degree": {
+        "id": 2,
+        "name": "Cao đẳng"
+      },
       "department": {
         "id": 1,
         "name": "Sale - Marketing"
       },
       "position": {
-        "id": 1,
-        "name": "Lễ tân"
-      },
-      "education_degree": {
-        "id": 1,
-        "name": "Trung cấp"
+        "id": 2,
+        "name": "Phục vụ"
       }
+    }
+  ],
+  "customer_types": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 2,
+      "name": "Customer 02",
+      "gender": true,
+      "birthday": "2021-02-02",
+      "identity_card": "201857426",
+      "phone": "0967492536",
+      "email": "daitoan2000@gmail.com",
+      "address": "Hà Nội",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      }
+    }
+  ],
+  "rent_types": [
+    {
+      "id": 1,
+      "name": "Năm"
+    },
+    {
+      "id": 2,
+      "name": "Tháng"
+    },
+    {
+      "id": 3,
+      "name": "Ngày"
+    },
+    {
+      "id": 4,
+      "name": "Giờ"
+    }
+  ],
+  "attach_services": [
+    {
+      "id": 1,
+      "name": "Massage",
+      "unit": "1 Người",
+      "price": 50000
+    },
+    {
+      "id": 2,
+      "name": "Karaoke",
+      "unit": "1 giờ",
+      "price": 200000
+    },
+    {
+      "id": 3,
+      "name": "Food",
+      "unit": "1 lượt ăn",
+      "price": 150000
+    },
+    {
+      "id": 4,
+      "name": "Drink",
+      "unit": "1 đồ uống",
+      "price": 20000
+    },
+    {
+      "id": 5,
+      "name": "Wifi",
+      "unit": "Unlimited",
+      "price": 0
+    },
+    {
+      "id": 6,
+      "name": "Đồ dùng tiện nghi",
+      "unit": "Unlimited",
+      "price": 0
+    },
+    {
+      "id": 7,
+      "name": "Hồ bơi",
+      "unit": "Unlimited",
+      "price": 0
+    }
+  ],
+  "houses": [
+    {
+      "id": 1,
+      "name": "House 1",
+      "area": 10,
+      "cost": 10,
+      "max_people": 10,
+      "rent_type": {
+        "id": 1,
+        "name": "Năm"
+      },
+      "standard": "1 sao",
+      "description": "New build",
+      "number_floor": 2
+    },
+    {
+      "id": 2,
+      "name": "House 2",
+      "area": "123",
+      "cost": "123",
+      "max_people": "123",
+      "rent_type": {
+        "id": 1,
+        "name": "Năm"
+      },
+      "standard": "2 sao",
+      "description": "123",
+      "number_floor": "123"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Room 1",
+      "area": 10,
+      "cost": 10,
+      "max_people": 10,
+      "rent_type": {
+        "id": 1,
+        "name": "Năm"
+      },
+      "free_services": [
+        {
+          "id": 5,
+          "name": "Wifi",
+          "unit": "Unlimited",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Room 2",
+      "area": "123",
+      "cost": "123",
+      "max_people": "123",
+      "rent_type": {
+        "id": 4,
+        "name": "Giờ"
+      },
+      "free_services": [
+        {
+          "id": 5,
+          "name": "Wifi",
+          "unit": "Unlimited",
+          "price": 0
+        },
+        {
+          "id": 6,
+          "name": "Đồ dùng tiện nghi",
+          "unit": "Unlimited",
+          "price": 0
+        }
+      ]
+    }
+  ],
+  "villas": [
+    {
+      "id": 1,
+      "name": "Villa 1",
+      "area": 10,
+      "cost": 10,
+      "max_people": 10,
+      "rent_type": {
+        "id": 1,
+        "name": "Năm"
+      },
+      "standard": "1 sao",
+      "description": "New build",
+      "number_floor": 2,
+      "area_pool": 15
+    },
+    {
+      "id": 2,
+      "name": "Villa 2",
+      "area": 10,
+      "cost": 10,
+      "max_people": 10,
+      "rent_type": {
+        "id": 1,
+        "name": "Năm"
+      },
+      "standard": "1 sao",
+      "description": "New build",
+      "number_floor": 2,
+      "area_pool": 15
     }
   ]
 }

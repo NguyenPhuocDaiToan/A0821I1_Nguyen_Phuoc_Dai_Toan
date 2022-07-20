@@ -1,0 +1,97 @@
+<div class="p-5">
+  <a class="text-danger text-center d-block text-decoration-none fw-bold fs-1" routerLink="/students" *ngIf="idEdit != 0">
+    Edit Student
+  </a>
+  <a class="text-danger text-center d-block text-decoration-none fw-bold fs-1" routerLink="/students" *ngIf="idEdit == 0">
+    Create Student
+  </a>
+  <form [formGroup]="form" (ngSubmit)="update()">
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Mã sinh viên:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="id" readonly>
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Tên:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="col-2"></span>
+      <div class="col-10">
+        <p *ngIf="name.invalid && name.touched" class="text-danger">Tên không được để trống</p>
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Số điện thoại:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="phone">
+      </div>
+    </div>
+    <div class="form-group row mb-2">
+      <span class="col-2"></span>
+      <div class="col-10">
+        <p *ngIf="phone.invalid && phone.touched" class="text-danger">Số điện thoại phải từ 10-12 số</p>
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Email:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="email">
+      </div>
+    </div>
+    <div class="form-group row mb-2">
+      <span class="col-2"></span>
+      <div class="col-10">
+        <p *ngIf="email.invalid && email.touched" class="text-danger">Email phải tuân thủ định dạng: abc@def.com</p>
+      </div>
+    </div>
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Tên nhóm:</span>
+      <div class="col-10">
+        <select formControlName="group" class="form-select" [compareWith]="compareGroup">
+          <option *ngFor="let group of groups" [ngValue]="group">{{group.name}}</option>
+        </select>
+      </div>
+    </div>
+    <!--    <p *ngIf="editForm.hasError('tenNhomInvalid')-->
+    <!--            && tenNhom.touched" class="text-danger">-->
+    <!--      Tên nhóm không hợp lệ và không chứa kí tự đặc biệt-->
+    <!--    </p>-->
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Tên đề tài:</span>
+      <div class="col-10">
+        <input type="text" class="form-control" formControlName="topicName">
+      </div>
+    </div>
+
+    <!--    <div class="form-group row mb-2">-->
+    <!--      <span class="col-2"></span>-->
+    <!--      <div class="col-10">-->
+    <!--        <p *ngIf="tenDeTai.invalid && tenDeTai.touched" class="text-danger">Tên đề tài không được để trống</p>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <div class="form-group row mb-2">
+      <span class="form-label col-2 fw-bold">Giáo viên hướng dẫn:</span>
+      <div class="col-10">
+        <select formControlName="teacher" class="form-select" [compareWith]="compareTeacher">
+          <option *ngFor="let teacher of teachers" [ngValue]="teacher">{{teacher.name}}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-end justify-content-end mt-4">
+      <button class="btn btn-warning" routerLink="/students">Cancel</button>
+      <button type="submit" class="btn btn-success mx-4">Save</button>
+    </div>
+  </form>
+</div>

@@ -14,6 +14,7 @@ export class ImgSliderComponent implements OnInit {
   ];
   img: string;
   indexImage: number;
+
   constructor() {
     this.indexImage = 0;
     this.img = this.listImage[this.indexImage];
@@ -23,17 +24,16 @@ export class ImgSliderComponent implements OnInit {
   }
 
   previous(): void {
-    if(this.indexImage == 0) {
+    if (this.indexImage === 0) {
       this.indexImage = this.listImage.length - 1;
-    }
-    else {
+    } else {
       this.indexImage--;
     }
     this.img = this.listImage[this.indexImage];
   }
 
   next(): void {
-    if(this.indexImage == this.listImage.length - 1) {
+    if(this.indexImage === this.listImage.length - 1) {
       this.indexImage = 0;
     }
     else {
